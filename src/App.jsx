@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./component/LandingPage/Footer";
 
 //pages
 import Home from "./pages/Home";
@@ -14,6 +15,7 @@ import ContactPage from "./pages/Contact";
 function App() {
   return (
     <> 
+ 
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/signUp" element={<AboutPage/>} />
@@ -24,7 +26,7 @@ function App() {
 
         {/* <Route  path= "*" element={<NotFoundPage/>}/> */}
       </Routes>
-      
+   
         </>
   );
 }

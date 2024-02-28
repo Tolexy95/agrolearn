@@ -1,11 +1,14 @@
 import React from 'react'
 import NavBar from '../component/LandingPage/Navbar';
 import HeroSection from '../component/LandingPage/HeroSection';
+import Footer from '../component/LandingPage/Footer';
+import HeroSection2 from '../component/LandingPage/HeroSection2';
 
 const Home = () => {
   return (
     <div>
       <NavBar/>
+      <HeroSection2/>
       <HeroSection/>
       <div className="bg-green-50 py-12 font-inter">
       <div className="container mx-auto px-4">
@@ -20,7 +23,9 @@ const Home = () => {
         </div>     
       </div>
     </div>
+    <Footer/>
     </div>
+    
   )
 }
 
