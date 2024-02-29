@@ -1,10 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-<<<<<<< HEAD
-import Footer from "./component/LandingPage/Footer";
-=======
 import "./App.css";
->>>>>>> 5bdf0bb9a535ded4f107af0c5b33cb6a855f7373
 
 //pages
 import Home from "./pages/Home";
