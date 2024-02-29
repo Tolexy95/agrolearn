@@ -15,6 +15,7 @@ module.exports = {
         paperImage:"url('https://www.agrohive.co/assets/images/shapes/ripped-paper-base-2.png')",
         farm:"url('./src/assets/farm.jpg')"
       },
+
     }
   },
   plugins: [require("daisyui")],

@@ -5,6 +5,7 @@ import Footer from '../component/LandingPage/Footer';
 import HeroSection2 from '../component/LandingPage/HeroSection2';
 
 const Home = () => {
+  const { isNavOpen} = useContext(SideBarContext);
   return (
     <div>
       <NavBar/>

@@ -29,6 +29,19 @@ const NavBar = () => {
                 <Link to="/courses">Courses </Link>
 
                 {/* Cart Icon */}
+
+                <div className="flex items-center gap-2">
+              <Link to="/cart">
+                <button
+                  type="button"
+                  className="flex items-center gap-3"
+                >
+                  <IoCartSharp className="h-5 w-5" />
+                  <span className="text-sm font-bold">0</span>
+                </button>
+              </Link>
+            </div>
+
                 {/* <FaShoppingCart className="mr-4" /> */}
                 <div className='w-32'>
                     <CustomButton
