@@ -13,12 +13,14 @@ const SideBar = () => {
     const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
 
     return (
-        <div className={`mobile-sidebar fixed top-0 -left-full w-72 md:w-96 h-full bg-[#1f4e3d] z-[1000] lg:hidden ${isNavOpen ? "open" : ""}`}>
+        <div className={`mobile-sidebar z-[3000px] fixed top-0 -left-full w-72 md:w-96 h-full bg-[#1f4e3d]  lg:hidden ${isNavOpen ? "open" : ""}`}>
             <div className="flex justify-end p-3">
-                <button className="border-none t text-white cursor-pointer bg-transparent text-2xl" onClick={() => setIsNavOpen(false)}>
+                <button className="border-none  text-white cursor-pointer bg-transparent text-2xl" onClick={() => setIsNavOpen(false)}>
                     <IoMdClose />
                 </button>
             </div>
+            <div className="flex flex-col justify-between h-[90%] md:[90%]">
+                <div>
             <ul className="p-2 list-none sidebar-menu text-white">
                 <li>
                     <NavLink to="/" onClick={() => setIsNavOpen(false)}>Home</NavLink>
@@ -47,8 +49,9 @@ const SideBar = () => {
                     </NavLink>
                 </button>
             </div>
+            </div>
 
-            <div className="mt-20 flex flex-col gap-5 text-[#b5c3be] px-4">
+            <div className="flex flex-col gap-5 text-[#b5c3be] px-4">
                 <div className="flex items-center gap-4 ">
                     <div className="icon flex items-center justify-center">
                         <BsEnvelope className="text-white" />
@@ -87,6 +90,7 @@ const SideBar = () => {
                     </div>
                 </div>
             </div>
+            </div>
 
             <style>{`
                 .mobile-sidebar {
@@ -114,6 +118,7 @@ const SideBar = () => {
 
                 .mobile-sidebar.open {
                     left: 0;
+                    z-index:1000;
                 }
 
                 .sidebar-menu li {

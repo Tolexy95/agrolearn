@@ -6,7 +6,7 @@ import HeroSection from '../component/LandingPage/HeroSection';
 const CoursesPage = () => {
   return (
     <div>
-      <NavBar/>
+      {/* <NavBar/> */}
       <HeroSection/>
       <div className="bg-green-50 py-12 font-inter">
       <div className="container mx-auto px-4">
