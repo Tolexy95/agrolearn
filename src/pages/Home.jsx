@@ -3,9 +3,13 @@ import NavBar from '../component/LandingPage/Navbar';
 import HeroSection from '../component/LandingPage/HeroSection';
 import Footer from '../component/LandingPage/Footer';
 import HeroSection2 from '../component/LandingPage/HeroSection2';
+// import { useContext } from 'react';
+// import { SideBarContext} from '../component/LandingPage/SideBar'
+
+
 
 const Home = () => {
-  const { isNavOpen} = useContext(SideBarContext);
+  // const { isNavOpen} = useContext(SideBarContext);
   return (
     <div>
       <NavBar/>

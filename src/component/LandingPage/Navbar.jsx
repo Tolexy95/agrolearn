@@ -36,8 +36,8 @@ const NavBar = () => {
                   type="button"
                   className="flex items-center gap-3"
                 >
-                  <IoCartSharp className="h-5 w-5" />
-                  <span className="text-sm font-bold">0</span>
+                  {/* <IoCartSharp className="h-5 w-5" />
+                  <span className="text-sm font-bold">0</span> */}
                 </button>
               </Link>
             </div>
