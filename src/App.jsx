@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Layout from "./component/Layout";
 
 //pages
 import Home from "./pages/Home";
@@ -17,12 +18,15 @@ function App() {
     <> 
  
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/about" element={<AboutPage/>} />
-        <Route exact path="/courses" element={<CoursesPage/>} />
-        <Route exact path="/contact" element={<ContactPage/>} />
-        <Route exact path="/service" element={<ServicesPage/>} />
-        <Route exact path="/partner" element={<PartnerPage/>} />
+        <Route element={<Layout/>}>
+        <Route index exact path="/" element={<Home />} />
+        <Route  path="/about" element={<AboutPage />} />
+        <Route  path="/courses" element={<CoursesPage />} />
+        <Route  path="/contact" element={<ContactPage />} />
+        <Route  path="/service" element={<ServicesPage />} />
+        <Route  path="/partner" element={<PartnerPage />} />
+        </Route>
+       
 
         {/* <Route  path= "*" element={<NotFoundPage/>}/> */}
       </Routes>

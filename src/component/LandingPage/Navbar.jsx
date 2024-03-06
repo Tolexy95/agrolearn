@@ -3,12 +3,12 @@ import { FaSearch, FaShoppingCart } from 'react-icons/fa';
 import CustomButton from '../Button/CustomButton';
 import { Link } from 'react-router-dom';
 import WebsiteLogo from "../../assets/AgroHive_logo.png"
-
+import { IoCartSharp } from "react-icons/io5";
 
 
 const NavBar = () => {
     return (
-        <nav className="px-10 py-4 flex justify-between items-center font-inter">
+        <nav className=" px-10 py-4 flex justify-between items-center font-inter">
             {/* Logo */}
             <div className="flex items-center w-40">
                 <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
