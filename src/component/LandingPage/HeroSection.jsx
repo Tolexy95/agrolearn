@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import CustomButton from '../Button/CustomButton';
+import { SideBarContext } from '../../context/SideBarProvider';
 
 const HeroSection = () => {
+    const { isNavOpen } = useContext(SideBarContext);
     return (
-        <div className="relative mt-3 font-inter">
+        <div className="relative mt-3 font-inter " style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
             <div
-                className="bg-hero-image bg-no-repeat bg-center bg-cover h-screen"
+                className="bg-heroImage bg-no-repeat bg-center bg-cover h-screen"
             ></div>
             <div className="absolute inset-0 bg-white opacity-35"></div>
             <div className="absolute top-1/3 left-10 transform -translate-y-1/2 text-white max-w-[500px]">

@@ -60,7 +60,7 @@ useEffect(() => {
   setActiveLink('/');
 }, []);
   return (
-    <div className=" font-inter text-sm sticky">
+    <div className=" font-inter text-sm sticky ">
       <div className="flex items-center justify-between pl-5 md:pl-16 pr-7 mt-7">
         {!isNavOpen && (
           <div className="w-40">
@@ -171,7 +171,7 @@ useEffect(() => {
 
 
 const Header = () => (
-  <div className="font-Inter">
+  <div className="font-Inter relative">
     {/* <ContactInfo /> */}
     <Navigation />
   </div>
