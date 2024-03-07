@@ -2,7 +2,7 @@ import React from 'react'
 import picture from '../../assets/two girls.jpg'
 import picture2 from '../../assets/paw paw man.jpg'
 import { GiPitchfork } from "react-icons/gi";
-import CustomButton from '../Button/CustomButton';
+
 
 
 const Hr = () => {
