@@ -47,7 +47,7 @@ const ContactInfo = () => (
 );
 
 
-Navigation = () => {
+const Header = () => {
   const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
   const [activeLink, setActiveLink] = useState('/');
 
@@ -55,13 +55,13 @@ Navigation = () => {
     setActiveLink(to);
   };
 
-  // Ensure that "Home" link is active on initial load
-useEffect(() => {
-  setActiveLink('/');
-}, []);
+
+  useEffect(() => {
+    setActiveLink('/');
+  }, []);
   return (
-    <div className=" font-inter text-sm sticky ">
-      <div className="flex items-center justify-between pl-5 md:pl-16 pr-7 mt-7">
+    <div className= {`${isNavOpen ? '' : 'bg-[#fff]'} font-inter text-sm sticky top-0`} style={{ zIndex: 10 }}>
+   <div className="flex items-center justify-between pl-5 md:pl-16 pr-7 mt-7">
         {!isNavOpen && (
           <div className="w-40">
             <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
@@ -169,12 +169,5 @@ useEffect(() => {
   );
 };
 
-
-const Header = () => (
-  <div className="font-Inter relative">
-    {/* <ContactInfo /> */}
-    <Navigation />
-  </div>
-);
 
 export default Header;
