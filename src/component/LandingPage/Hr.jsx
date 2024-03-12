@@ -10,7 +10,7 @@ const Hr = () => {
     <div className=''>
         <div className='lg:flex'>
 <div className="lg:relative">
-  <img src={picture} className="w-[300px] ml-5 rounded-md lg:w-[600px] lg:ml-28 lg:m-4" alt="" />
+  <img src={picture} className="w-[300px] ml-5 rounded-md lg:w-[600px] lg:ml-28 lg:m-4 lg:h-6" alt="" />
   <img
     src={picture2}
     className="mt-6 w-[300px] ml-5 rounded-md lg:w-[400px] lg:items-end justify-end lg:absolute lg:top-[440px] lg:left-0"
