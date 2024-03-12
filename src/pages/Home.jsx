@@ -3,7 +3,7 @@ import HeroSection2 from '../component/LandingPage/HeroSection2';
 import Hr from '../component/LandingPage/Hr';
 import FeatureSection from '../component/LandingPage/Feature';
 import FounderSection from '../component/LandingPage/FounderSection';
-
+import ProjectSlide from '../component/LandingPage/ProjectSlide';
 
 const Home = () => {
   return (
@@ -12,6 +12,7 @@ const Home = () => {
      <FeatureSection/>
        <Hr/>
        <FounderSection/>
+       <ProjectSlide/>
     </div>
 
   )

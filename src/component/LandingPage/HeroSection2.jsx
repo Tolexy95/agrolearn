@@ -41,7 +41,6 @@ const HeroSection2 = () => {
       </div>
 
 
-
       <div className="md:hidden mt-16 text-center lg:w-[500px]" style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
         <button className='lg:w-[450px] w-[280px] '>
           <NavLink href="/portal" className="btn text-lg w-full font-semibold  bg-[#00cc3c] text-white hover:bg-[#176300]">
@@ -50,6 +49,7 @@ const HeroSection2 = () => {
         </button>
       </div>
 
+    
 
     </div>
   );

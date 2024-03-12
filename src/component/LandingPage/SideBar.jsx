@@ -13,7 +13,7 @@ const SideBar = () => {
     const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
 
     return (
-        <div className={`mobile-sidebar fixed top-0 -left-full w-72 md:w-96 h-full bg-[#1f4e3d]  lg:hidden ${isNavOpen ? "open" : ""}`} style={{ zIndex: 1000 }}>
+        <div className={`mobile-sidebar fixed top-0 -right-full w-72 md:w-96 h-full bg-[#1f4e3d]  lg:hidden ${isNavOpen ? "open" : ""}`} style={{ zIndex: 1000 }}>
             <div className="flex justify-end p-3">
                 <button className="border-none  text-white cursor-pointer bg-transparent text-2xl" onClick={() => setIsNavOpen(false)}>
                     <IoMdClose />
@@ -100,7 +100,7 @@ const SideBar = () => {
 
                 @keyframes slideInLeft {
                     from {
-                        transform: translateX(-100%);
+                        transform: translateX(100%);
                     }
                     to {
                         transform: translateX(0);
@@ -117,7 +117,7 @@ const SideBar = () => {
                 }
 
                 .mobile-sidebar.open {
-                    left: 0;
+                    right: 0;
                     z-index:1000;
                 }
 

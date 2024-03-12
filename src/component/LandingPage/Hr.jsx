@@ -10,9 +10,9 @@ const Hr = () => {
     return (
         <>
            
-            <div className={`font-inter px-10 mt-36 flex flex-col lg:flex-row gap-5 mb-36 lg:gap-11 lg:p-10 relative`} style={{ zIndex: -1 }}>
+            <div className={`font-inter px-10 mt-36 flex flex-col lg:flex-row gap-5 mb-36 lg:gap-11 lg:p-10 relative`} style={{ zIndex: isNavOpen ? -1 : '0' }}>
 
-            <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png" className="absolute md:bottom-[-20%] bottom-[-10%] right-0" alt="" style={{ zIndex: -1 }}/>
+            <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png" className="absolute md:bottom-[-20%] bottom-[-10%] right-0" alt="" style={{ zIndex: isNavOpen ? -1 : '0' }}/>
                 
                 <div className="md:flex md:relative lg:items-start" style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
 
@@ -35,7 +35,7 @@ const Hr = () => {
                         Easy HR staffing for AgriBusinesses
                     </h2>
 
-                    <p className='mt-6 text-[18px]  text-[#00cc3c] font-sora italic'>Africans first AgriTech human resources and work force management company</p>
+                    <p className='mt-6 text-[18px]  text-[#00cc3c] font-sora italic'>Africa's first AgriTech human resources and work force management company</p>
 
 
                     <div>
@@ -64,9 +64,10 @@ const Hr = () => {
 
                     <hr className='mt-3 text-green-500 text-2xl  lg:mt-8 ' />
 
-                    <div className='flex flex-col  md:flex-row mt-4 md:mt-7' style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
-                        <button className='bg-[#00cc3c] text-white text-xl px-4 w-52 py-6 rounded-md m-2 font-bold'>Hire experts</button>
-                        <button className='bg-[#00cc3c] text-white text-xl  px-4 w-56 py-6 rounded-md m-2 font-bold'>Apply as expert</button>
+                    <div className='
+                    flex flex-col  md:flex-row mt-4 md:mt-7' style={{ zIndex: isNavOpen ? -1 : '0' }}>
+                        <button className='bg-[#00cc3c] hover:bg-[#176300] text-white text-xl px-4 w-52 py-6 rounded-md m-2 font-bold'>Hire experts</button>
+                        <button className='bg-[#00cc3c] hover:bg-[#176300] text-white text-xl  px-4 w-56 py-6 rounded-md m-2 font-bold'>Apply as expert</button>
                     </div>
                 </div>
             </div>

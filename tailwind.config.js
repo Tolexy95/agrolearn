@@ -16,6 +16,10 @@ module.exports = {
         farm:"url('./src/assets/farm.jpg')",
         featureBg:"url('https://www.agrohive.co/assets/images/icons/about-2-bg-1.png')"
       },
+
+      colors: {
+        'primary': 'rgba(247, 195, 95, 0.9)' 
+      }
     }
   },
   plugins: [require("daisyui")],

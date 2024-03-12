@@ -27,7 +27,7 @@ const ContactInfo = () => (
       <h6>info@agrohive.co</h6>
     </div>
 
-    <div className="flex items-center gap-5 text-[#6e7673]">
+    <div className="flex items-center gap-5 text-[#6e7673] mb-5">
       <NavLink to="https://www.instagram.com/agro_hive/">
         <AiOutlineInstagram className="w-4 h-4 hover:text-[#00cc3c]" />
       </NavLink>
@@ -49,96 +49,58 @@ const ContactInfo = () => (
 
 const Header = () => {
   const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
-  const [activeLink, setActiveLink] = useState('/');
+ 
 
-  const handleNavLinkClick = (to) => {
-    setActiveLink(to);
-  };
-
-
-  useEffect(() => {
-    setActiveLink('/');
-  }, []);
   return (
     <div className= {`${isNavOpen ? '' : 'bg-[#fff]'} font-inter text-sm sticky top-0`} style={{ zIndex: 10 }}>
    <div className="flex items-center justify-between pl-5 md:pl-16 pr-7 mt-7">
-        {!isNavOpen && (
+        
           <div className="w-40">
             <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
           </div>
-        )}
+        
         <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold text-[#6e7673] gap-5 space-x-6 text-base relative">
           <li>
             <NavLink
               exact
               to="/"
-              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md"
-              onClick={() => handleNavLinkClick('/')}
-            >
+              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
               <span className="relative z-10">Home</span>
-              {activeLink === '/' && (
-                <span className="absolute bottom-[-20px] left-0 w-full h-0.5 hover:text-[#255946] transition-all duration-300"></span>
-              )}
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/about"
-              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md"
-              onClick={() => handleNavLinkClick('/about')}
-            >
+              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
               About
-              {activeLink === '/about' && (
-                <span className="absolute bottom-[-20px] left-0 w-full h-0.5 bg-[#255946] transition-all duration-300"></span>
-              )}
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/service"
-              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md"
-              onClick={() => handleNavLinkClick('/service')}
-            >
+              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
               Services
-              {activeLink === '/service' && (
-                <span className="absolute bottom-[-20px] left-0 w-full h-0.5 hover:text-[#255946] transition-all duration-300"></span>
-              )}
-            </NavLink>
+             </NavLink>
           </li>
           <li>
             <NavLink
               to="/partner"
-              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md"
-              onClick={() => handleNavLinkClick('/products')}
-            >
+              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
               Our partners
-              {activeLink === '/partner' && (
-                <span className="absolute bottom-[-20px] left-0 w-full h-0.5 bg-[#255946] transition-all duration-300"></span>
-              )}
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/courses"
-              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md"
-              onClick={() => handleNavLinkClick('/courses')}
-            >
+              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
               Courses
-              {activeLink === '/courses' && (
-                <span className="absolute bottom-[-20px] left-0 w-full h-0.5 bg-[#255946] transition-all duration-300"></span>
-              )}
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/contact"
-              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md"
-              onClick={() => handleNavLinkClick('/contact')}
-            >
+              className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
               Contact
-              {activeLink === '/contact' && (
-                <span className="absolute bottom-[-20px] left-0 w-full h-0.5 bg-[#255946] transition-all duration-300"></span>
-              )}
             </NavLink>
           </li>
         </ul>
@@ -146,7 +108,7 @@ const Header = () => {
 
         <ContactInfo />
 
-        <div className="HAMBURGER-ICON flex lg:hidden" onClick={() => setIsNavOpen(!isNavOpen)}>
+        <div className={`${isNavOpen ? 'hidden' : 'block'} HAMBURGER-ICON flex lg:hidden`} onClick={() => setIsNavOpen(!isNavOpen)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
