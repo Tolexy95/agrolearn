@@ -49,7 +49,7 @@ const FounderSection = () => {
 
             {isModalOpen && (
                 <div className="fixed top-24 left-10 w-[full] h-[full] bg-black bg-opacity-50 flex justify-center items-center">
-                    <div className="bg-white rounded-lg p-8 max-w-screen-lg max-w-md">
+                    <div className="bg-white rounded-lg p-8 max-w-screen-lg">
                         <button onClick={() => setIsModalOpen(false)} className="absolute top-2 right-2">
                             <GrFormClose className="text-2xl" />
                         </button>
