@@ -35,7 +35,7 @@ const ProjectSlide = () => {
       };
 
   return (
-    <div className="lg:px-10 px-5 mb-40  lg:pl-24">
+  <div className="lg:px-10 px-5 mb-40 mt-20   lg:pl-24">
     <Slider {...settings}>
     <div className="w-full">
       <img src="https://www.agrohive.co/assets/images/projects/agrohive-project-uganda-1-1.jpg" alt="Agrohive" className='rounded-md'/>
