@@ -7,7 +7,7 @@ function Layout() {
   const { isNavOpen } = useContext(SideBarContext);
 
   return (
-    <div className="relative">
+    <div className="relative max-w-[2000px] mx-auto">
       <Header />
       <Outlet />
       {isNavOpen && (

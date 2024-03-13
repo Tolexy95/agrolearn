@@ -8,7 +8,7 @@ import { SideBarContext } from '../../context/SideBarProvider';
 const HeroSection2 = () => {
   const { isNavOpen } = useContext(SideBarContext);
   return (
-    <div className={`flex flex-col md:flex-row p-8 md:px-16 md:py-20 md:gap-6 lg:gap-3 justify-between mt-6 font-inter ${isNavOpen ? '' : 'bg-[#f6f5f283]'}`}>
+    <div className={`flex flex-col md:flex-row p-8 md:px-16 md:py-20 md:gap-6 lg:gap-3 justify-between font-inter ${isNavOpen ? '' : 'bg-[#f6f5f283]'}`}>
 
       <div className='md:max-w-72 lg:max-w-[800px] lg:flex-1' >
         <h1 className="text-2xl lg:text-[2.8rem] text-[#255946] font-sora font-semibold leading-loose" style={{ lineHeight: '1.3' }}>

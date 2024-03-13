@@ -15,7 +15,7 @@ import { CiLinkedin } from "react-icons/ci";
 const ContactInfo = () => (
   // <div className="hidden lg:flex items-center justify-between p-2 px-16 text-sm font-bold font-inter">
 
-  <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora">
+  <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora py-5">
 
     <div className="flex items-center gap-2">
       <FaRegClock className="w-5 h-5 text-[#00cc3c]" />
@@ -27,7 +27,7 @@ const ContactInfo = () => (
       <h6>info@agrohive.co</h6>
     </div>
 
-    <div className="flex items-center gap-5 text-[#6e7673] mb-5">
+    <div className="flex items-center gap-5 text-[#6e7673]">
       <NavLink to="https://www.instagram.com/agro_hive/">
         <AiOutlineInstagram className="w-4 h-4 hover:text-[#00cc3c]" />
       </NavLink>
@@ -50,10 +50,10 @@ const ContactInfo = () => (
 const Header = () => {
   const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
  
+    return (
+    <div className={`${isNavOpen ? '' : 'bg-[#fff]'} font-inter text-sm sticky top-0`} style={{ top: 0, zIndex: 10 }}>
 
-  return (
-    <div className= {`${isNavOpen ? '' : 'bg-[#fff]'} font-inter text-sm sticky top-0`} style={{ zIndex: 10 }}>
-   <div className="flex items-center justify-between pl-5 md:pl-16 pr-7 mt-7">
+   <div className="flex items-center justify-between pl-5 md:pl-16 pr-7 ">
         
           <div className="w-40">
             <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
@@ -105,10 +105,9 @@ const Header = () => {
           </li>
         </ul>
 
+         <ContactInfo />
 
-        <ContactInfo />
-
-        <div className={`${isNavOpen ? 'hidden' : 'block'} HAMBURGER-ICON flex lg:hidden`} onClick={() => setIsNavOpen(!isNavOpen)}>
+        <div className={`${isNavOpen ? 'hidden' : 'block'} flex lg:hidden`} onClick={() => setIsNavOpen(!isNavOpen)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
