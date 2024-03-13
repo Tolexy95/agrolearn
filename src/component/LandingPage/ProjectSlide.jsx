@@ -10,6 +10,7 @@ import { MODAL_BODY_TYPES } from '../../utils/globalConstant';
 
 
 
+
 const ProjectSlide = () => {
   const dispatch = useDispatch();
   const { isNavOpen } = useContext(SideBarContext);
