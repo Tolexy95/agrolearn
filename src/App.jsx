@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Layout from "./component/Layout";
+import AppLayout from "./component/layout/AppLayout";
 
 //pages
 import Home from "./pages/Home";
@@ -18,7 +18,7 @@ function App() {
     <> 
  
       <Routes>
-        <Route element={<Layout/>}>
+        <Route element={<AppLayout/>}>
         <Route index exact path="/" element={<Home />} />
         <Route  path="/about" element={<AboutPage />} />
         <Route  path="/courses" element={<CoursesPage />} />

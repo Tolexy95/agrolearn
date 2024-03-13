@@ -1,29 +1,32 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from 'react-responsive';
 import { SideBarContext } from '../../context/SideBarProvider';
-import Modal from '../Modal';
+import { openModal } from '../../redux/features/modalSlice';
+import { useDispatch } from 'react-redux';
+import { MODAL_BODY_TYPES } from '../../utils/globalConstant';
+
 
 
 const ProjectSlide = () => {
+  const dispatch = useDispatch();
   const { isNavOpen } = useContext(SideBarContext);
   const isMobile = useMediaQuery({ maxWidth: 767 }); // Media query for mobile screens
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 }); // Media query for tablet screens
   // const isDesktop = useMediaQuery({ minWidth: 1024, maxWidth: 2559 }); // Media query for desktop screens
   const isLargerDesktop = useMediaQuery({ minWidth: 2560 }); // Media query for larger desktop screens
-  const [selectedProject, setSelectedProject] = useState(null);
+  
 
-
-  const openModal = (project) => {
-    setSelectedProject(project);
-  };
-
-  const closeModal = () => {
-    setSelectedProject(null);
-  };
-
+  const openExportModal = () => {
+    dispatch(
+      openModal({
+        bodyType: MODAL_BODY_TYPES.PROJECT_MODAL,
+      })
+    );
+};
+  
 
   
   const projectData = [
@@ -135,13 +138,12 @@ const ProjectSlide = () => {
             <div className="absolute top-0 left-0 bottom-0 right-0 lg:w-11/12 h-full flex justify-center items-center bg-primary bg-opacity-50 opacity-0  hover:opacity-100 rounded-md transition duration-500 ease-out hover:ease-in">
               <div className='flex flex-col gap-4 mt-16'>
               <h3 className="text-white font-bold text-2xl">{project.title}</h3>
-              <button onClick={() => openModal(project)} className='text-white border-b-2 w-32 pb-1 border-[#00cc3d9a] hover:border-white hover:text-[#00cc3d9a] text-lg font-semibold font-sora'>Read more</button>
+              <button onClick={() => openExportModal(project)} className='text-white border-b-2 w-32 pb-1 border-[#00cc3d9a] hover:border-white hover:text-[#00cc3d9a] text-lg font-semibold font-sora'>Read more</button>
               </div>
               </div>
           </div>
         ))}
       </Slider>
-      {selectedProject && <Modal project={selectedProject} onClose={closeModal} />}
     </div>
   );
 }

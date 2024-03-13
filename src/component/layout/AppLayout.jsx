@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import Header from "./LandingPage/Header";
+import Header from "../LandingPage/Header";
 import { Outlet } from "react-router-dom";
-import { SideBarContext } from "../context/SideBarProvider";
+import { SideBarContext } from "../../context/SideBarProvider";
 
-function Layout() {
+
+function AppLayout() {
   const { isNavOpen } = useContext(SideBarContext);
 
   return (
@@ -18,4 +19,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default AppLayout;
