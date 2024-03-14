@@ -9,16 +9,18 @@ const Hr = () => {
     const { isNavOpen } = useContext(SideBarContext);
     return (
         <>
-           
-            <div className={`font-inter px-10 mt-36 flex flex-col lg:flex-row gap-5 mb-36 lg:gap-11 lg:p-10 relative`} style={{ zIndex: isNavOpen ? -1 : '0' }}>
+            <div className={`font-inter px-5 md:px-12 mt-12 flex flex-col lg:flex-row gap-5 mb-36 lg:gap-11 lg:p-10 relative`} style={{ zIndex: isNavOpen ? -1 : '0' }}>
 
-            <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png" className="absolute md:bottom-[-20%] bottom-[-10%] right-0" alt="" style={{ zIndex: isNavOpen ? -1 : '0' }}/>
-                
-                <div className="md:flex md:relative lg:items-start" style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
+                <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png " className="absolute top-[95%] md:top-[90%] lg:top-[70%] lg:left-[-8%] left-0" alt="" style={{ zIndex: isNavOpen ? -1 : '0' }} />
 
-                    <img src={picture} className="rounded-md lg:ml-24  " alt="" style={{ zIndex: isNavOpen ? -1 : 'auto' }} />
+                <div className="md:flex md:relative lg:items-start w-full" style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
+                    <div style={{ zIndex: -1 }} >
+                        <img src={picture} className="rounded-md lg:ml-12" alt="" style={{ zIndex: isNavOpen ? -1 : 'auto' }} />
+                    </div>
 
-                    <div className='md:w-[520px] mt-5 md:mt-0 md:absolute md:top-[70%] md:left-[29%] lg:top-[40%] lg:left-0'>
+
+
+                    <div className='md:w-[520px] mt-5 md:mt-0 md:absolute md:top-[75%] md:left-[30%] lg:top-[40%] lg:left-[-38px]'>
                         <img
                             src={picture2}
                             style={{ zIndex: isNavOpen ? -1 : 'auto' }}
@@ -28,7 +30,7 @@ const Hr = () => {
                     </div>
                 </div>
 
-                <div className='md:px-5 flex-1 lg:p-24 lg:ml-16'>
+                <div className='md:px-5 lg:bg-white flex-1 lg:mt-14 lg:p-24 lg:-ml-20' style={{ zIndex: 1 }}>
                     <h1 className='mt-9 font-semibold text-[#9ea5a2] md:mt-52 lg:mt-0 text-sm mb-3 tracking-[0.2em]' style={{ lineHeight: '1.3' }}>WELCOME TO AGROHIVE</h1>
 
                     <h2 className="text-2xl md:text-[35px] lg:text-[2.8rem] text-[#255946] font-semibold leading-loose" style={{ lineHeight: '1.3' }}>
@@ -36,8 +38,6 @@ const Hr = () => {
                     </h2>
 
                     <p className='mt-6 text-[18px]  text-[#00cc3c] font-sora italic'>Africa's first AgriTech human resources and work force management company</p>
-
-
                     <div>
                         <p className='mt-6 text-base text-[#6e7673] tracking-widest' style={{ lineHeight: '1.9' }}>We assist thousands of agri-food businesses across Africa to upskill, hire & manage skilled and trusted agricultural workforces using technology. We know that increasing agricultural productivity and profitability starts with easy recruiting and managing a team of skilled and trusted agricultural experts.</p>
 
@@ -66,8 +66,8 @@ const Hr = () => {
 
                     <div className='
                     flex flex-col  md:flex-row mt-4 md:mt-7' style={{ zIndex: isNavOpen ? -1 : '0' }}>
-                        <button className='bg-[#00cc3c] hover:bg-[#176300] text-white text-xl px-4 w-52 py-6 rounded-md m-2 font-bold'>Hire experts</button>
-                        <button className='bg-[#00cc3c] hover:bg-[#176300] text-white text-xl  px-4 w-56 py-6 rounded-md m-2 font-bold'>Apply as expert</button>
+                        <button className='bg-[#00cc3c] hover:bg-[#176300] text-white text-xl px-4 w-52 py-6 rounded-md m-2 font-bold' style={{ zIndex: 5 }}>Hire experts</button>
+                        <button className='bg-[#00cc3c] hover:bg-[#176300] text-white text-xl  px-4 w-56 py-6 rounded-md m-2 font-bold' style={{ zIndex: 5 }}>Apply as expert</button>
                     </div>
                 </div>
             </div>

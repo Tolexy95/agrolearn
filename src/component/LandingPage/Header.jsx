@@ -1,11 +1,11 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, {useContext} from "react";
 import { BsEnvelope } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import WebsiteLogo from "../../assets/AgroHive_logo.png";
 import { FaRegClock } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 import { SideBarContext } from "../../context/SideBarProvider";
 import SideBar from "./SideBar";
 import { CiLinkedin } from "react-icons/ci";
@@ -55,14 +55,13 @@ const Header = () => {
 
    <div className="flex items-center justify-between pl-5 md:pl-16 pr-7 ">
         
-          <div className="w-40">
+          <NavLink  to="/" className="w-40">
             <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
-          </div>
+          </NavLink>
         
         <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold text-[#6e7673] gap-5 space-x-6 text-base relative">
           <li>
             <NavLink
-              exact
               to="/"
               className="relative hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
               <span className="relative z-10">Home</span>

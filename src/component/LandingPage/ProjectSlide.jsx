@@ -8,9 +8,6 @@ import { openModal } from '../../redux/features/modalSlice';
 import { useDispatch } from 'react-redux';
 import { MODAL_BODY_TYPES } from '../../utils/globalConstant';
 
-
-
-
 const ProjectSlide = () => {
   const dispatch = useDispatch();
   const { isNavOpen } = useContext(SideBarContext);
@@ -20,13 +17,15 @@ const ProjectSlide = () => {
   const isLargerDesktop = useMediaQuery({ minWidth: 2560 }); // Media query for larger desktop screens
   
 
-  const openExportModal = () => {
+  const openExportModal = (project) => {
     dispatch(
       openModal({
         bodyType: MODAL_BODY_TYPES.PROJECT_MODAL,
+        extraObject: project 
       })
     );
-};
+  };
+  
   
 
   
@@ -131,7 +130,7 @@ const ProjectSlide = () => {
       : settings.desktop;
 
   return (
-    <div className="lg:px-10 px-5 mb-40 lg:pl-24">
+    <div className="lg:px-12 px-5 mb-40 lg:pl-24 mt-6" >
       <Slider {...settingsToUse}>
         {projectData.map((project, index) => (
           <div key={index} className="w-full relative">

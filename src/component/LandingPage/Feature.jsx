@@ -26,13 +26,13 @@ const FeatureSection = () => {
 
   return (
     <>
-      <div className=' -m-10'>
-        <img src="https://www.agrohive.co/assets/images/icons/about-2-bg-1.png" alt="" className="absolute left-2" style={{ zIndex: -1 }} />
+      <div className=''>
+        <img src="https://www.agrohive.co/assets/images/icons/about-2-bg-1.png" alt="" className="absolute lg:right-[70px] lg:top-[15%] md:top-[7%] md:right-0 top-[14%]" style={{ zIndex: -10 }} />
       </div>
       
-      <div className='flex flex-col lg:flex-row gap-8  px-12 font-sora w-full mt-52 mb-20  '>
+      <div className='flex flex-col lg:flex-row gap-8 px-5 md:px-12 font-sora w-full mt-10 mb-20  '>
         {cards.map((card, index) => (
-          <div key={index} className=" bg-white  hover:bg-[#49a760] rounded-lg shadow-xl flex gap-10 py-12 px-10 items-center justify-center w-full hover:text-[#fff]" style={{ zIndex: isNavOpen ? -1 : 0 }} >
+          <div key={index} className=" bg-white  hover:bg-[#49a760] rounded-lg flex gap-10 py-12 px-10 items-center justify-center w-full hover:text-[#fff]" style={{ zIndex: isNavOpen ? -1 : 0, boxShadow: '0px 10px 60px 0px rgba(0, 0, 0, 0.3)' }} >
             <div className="">
               <p className='text-sm uppercase font-semibold tracking-widest'>{card.description}</p>
               <h3 className='font-semibold mt-6 text-xl'>{card.title}</h3>

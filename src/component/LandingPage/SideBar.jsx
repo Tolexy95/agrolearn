@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { SideBarContext } from "../../context/SideBarProvider";
@@ -12,8 +12,23 @@ import { CiLinkedin } from "react-icons/ci";
 const SideBar = () => {
     const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
 
+const sidebarRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                setIsNavOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [setIsNavOpen]);
+    
     return (
-        <div className={`mobile-sidebar fixed top-0 -right-full w-72 md:w-96 h-full bg-[#1f4e3d]  lg:hidden ${isNavOpen ? "open" : ""}`} style={{ zIndex: 1000 }}>
+        <div ref={sidebarRef} className={`mobile-sidebar fixed top-0 -right-full w-72 md:w-96 h-full bg-[#1f4e3d]  lg:hidden ${isNavOpen ? "open" : ""}`} style={{ zIndex: 1000 }}>
             <div className="flex justify-end p-3">
                 <button className="border-none  text-white cursor-pointer bg-transparent text-2xl" onClick={() => setIsNavOpen(false)}>
                     <IoMdClose />
