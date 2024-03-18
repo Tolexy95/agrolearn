@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { SideBarContext } from "../../context/SideBarProvider";
@@ -8,12 +8,29 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import Button from "../Button/CustomButton";
+import { ButtonSize, ButtonState } from "../Button/ButtonStyles";
 
 const SideBar = () => {
     const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
 
+    const sidebarRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                setIsNavOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [setIsNavOpen]);
+
     return (
-        <div className={`mobile-sidebar fixed top-0 -right-full w-72 md:w-96 h-full bg-[#1f4e3d]  lg:hidden ${isNavOpen ? "open" : ""}`} style={{ zIndex: 1000 }}>
+        <div ref={sidebarRef} className={`mobile-sidebar fixed top-0 -right-full w-72 md:w-96 h-full bg-[#1f4e3d]  lg:hidden ${isNavOpen ? "open" : ""}`}>
             <div className="flex justify-end p-3">
                 <button className="border-none  text-white cursor-pointer bg-transparent text-2xl" onClick={() => setIsNavOpen(false)}>
                     <IoMdClose />
@@ -42,12 +59,12 @@ const SideBar = () => {
                         </li>
                     </ul>
 
-                    <div className=" flex justify-center">
-                        <button>
-                            <NavLink href="/portal" className="btn w-full bg-[#00cc3c] text-white hover:bg-[#176300] mt-10">
-                                Visit Portal
-                            </NavLink>
-                        </button>
+                    <div className="flex justify-center mt-4">
+                        <Button
+                            value='Visit Portal'
+                            size={ButtonSize.lg}
+                            variant={ButtonState.PRIMARY}
+                        />
                     </div>
                 </div>
 
