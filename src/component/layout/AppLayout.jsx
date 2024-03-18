@@ -5,6 +5,7 @@ import { SideBarContext } from "../../context/SideBarProvider";
 import ModalLayout from "./ModalLayout";
 
 
+
 function AppLayout() {
   const { isNavOpen } = useContext(SideBarContext);
 
@@ -14,7 +15,7 @@ function AppLayout() {
       <Outlet />
       <ModalLayout/>
       {isNavOpen && (
-        <div className="fixed top-0 left-0  w-full h-full bg-[#176300] opacity-50 flex lg:hidden" style={{ zIndex: -1 }}></div>
+        <div className="fixed top-0 left-0  w-full h-full bg-[#176300] opacity-50 flex lg:hidden" ></div>
       )}
     </div>
 

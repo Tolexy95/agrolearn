@@ -1,36 +1,34 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import picture from '../../assets/two girls.jpg'
 import picture2 from '../../assets/paw paw man.jpg'
 import { GiPitchfork } from "react-icons/gi";
-import { SideBarContext } from '../../context/SideBarProvider';
+import Button from '../Button/CustomButton';
+import { ButtonSize, ButtonState } from '../Button/ButtonStyles';
 
 
 const Hr = () => {
-    const { isNavOpen } = useContext(SideBarContext);
     return (
         <>
-            <div className={`font-inter px-5 md:px-12 mt-12 flex flex-col lg:flex-row gap-5 mb-36 lg:gap-11 lg:p-10 relative`} style={{ zIndex: isNavOpen ? -1 : '0' }}>
+            <div className={`font-inter px-5 md:px-12 mt-12 flex  flex-col lg:flex-row gap-5 mb-36 lg:gap-11 lg:p-10 relative`}>
 
-                <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png " className="absolute top-[95%] md:top-[90%] lg:top-[70%] lg:left-[-8%] left-0" alt="" style={{ zIndex: isNavOpen ? -1 : '0' }} />
+                <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png " className="absolute top-[95%] md:top-[90%] lg:top-[70%] lg:left-[-8%] left-0 -z-30" alt="" />
 
-                <div className="md:flex md:relative lg:items-start w-full" style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
-                    <div style={{ zIndex: -1 }} >
-                        <img src={picture} className="rounded-md lg:ml-12" alt="" style={{ zIndex: isNavOpen ? -1 : 'auto' }} />
+
+                <div className="md:flex md:relative lg:items-start w-full -z-10">
+                    <div>
+                        <img src={picture} className="rounded-md lg:ml-12" alt="" />
                     </div>
-
-
 
                     <div className='md:w-[520px] mt-5 md:mt-0 md:absolute md:top-[75%] md:left-[30%] lg:top-[40%] lg:left-[-38px]'>
                         <img
                             src={picture2}
-                            style={{ zIndex: isNavOpen ? -1 : 'auto' }}
                             className="rounded-md"
                             alt=""
                         />
                     </div>
                 </div>
 
-                <div className='md:px-5 lg:bg-white flex-1 lg:mt-14 lg:p-24 lg:-ml-20' style={{ zIndex: 1 }}>
+                <div className='md:px-5  lg:p-24 lg:w-full lg:bg-white lg:-ml-20 '>
                     <h1 className='mt-9 font-semibold text-[#9ea5a2] md:mt-52 lg:mt-0 text-sm mb-3 tracking-[0.2em]' style={{ lineHeight: '1.3' }}>WELCOME TO AGROHIVE</h1>
 
                     <h2 className="text-2xl md:text-[35px] lg:text-[2.8rem] text-[#255946] font-semibold leading-loose" style={{ lineHeight: '1.3' }}>
@@ -65,9 +63,20 @@ const Hr = () => {
                     <hr className='mt-3 text-green-500 text-2xl  lg:mt-8 ' />
 
                     <div className='
-                    flex flex-col  md:flex-row mt-4 md:mt-7' style={{ zIndex: isNavOpen ? -1 : '0' }}>
-                        <button className='bg-[#00cc3c] hover:bg-[#176300] text-white text-xl px-4 w-52 py-6 rounded-md m-2 font-bold' style={{ zIndex: 5 }}>Hire experts</button>
-                        <button className='bg-[#00cc3c] hover:bg-[#176300] text-white text-xl  px-4 w-56 py-6 rounded-md m-2 font-bold' style={{ zIndex: 5 }}>Apply as expert</button>
+                    flex flex-col gap-1 md:flex-row items-center md:gap-5 mt-4 md:mt-7'>
+
+                        <Button
+                            value='Hire Experts'
+                            size={ButtonSize.md}
+                            variant={ButtonState.PRIMARY}
+                        />
+
+                        <Button
+                            className={`${ButtonSize ? 'w-48 md:w-1/2' : 'w-1/2'}`}
+                            value='Apply as an Expert'
+                            size={ButtonSize.md}
+                            variant={ButtonState.OUTLINE}
+                        />
                     </div>
                 </div>
             </div>
