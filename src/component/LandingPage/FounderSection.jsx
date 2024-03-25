@@ -19,7 +19,7 @@ const FounderSection = () => {
       };
 
     return (
-        <div className={`lg:-mt-44 md:-mt-24 -mt-28 bg-[#f6f5f2]  font-inter '}`} >
+        <div className={`lg:-mt-32 md:-mt-24 -mt-28 bg-[#f6f5f2] shadow-lg  font-inter '}`} style={{boxShadow: '0px 10px 60px 0px rgba(0, 0, 0, 0.3)' }}>
             <div className="flex flex-col lg:flex-row justify-between gap-20 px-5 md:px-12 lg:py-16">
               
                 <div className="flex-1">
