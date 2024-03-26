@@ -25,3 +25,18 @@
       display: none;
     }
   }
+ 
+  .custom-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 9px; 
+    height: 9px; 
+    background-color: #255946;
+  }
+  
+
+  
+
+  

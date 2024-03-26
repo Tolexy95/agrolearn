@@ -54,13 +54,13 @@ const Header = () => {
   return (
     <div className= {`${isNavOpen ? '' : 'bg-[#fff]'} lg:bg-white font-inter text-sm sticky top-0 z-10`}>
    
-      <div className="flex items-center justify-between p-5 lg:p-2 ">
+      <div className="flex items-center justify-between p-5 lg:px-12 lg:py-0 ">
         
             <NavLink to="/" className="w-40 hidden lg:flex">
               <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
             </NavLink>
 
-            <NavLink className="flex lg:hidden">
+            <NavLink  to="/" className="flex lg:hidden">
             <img src={MobileLogo} alt='website Logo' className='object-cover w-10' />
             </NavLink>
 

@@ -10,7 +10,7 @@ function AppLayout() {
   const { isNavOpen } = useContext(SideBarContext);
 
   return (
-    <div className="relative max-w-[2000px] mx-auto">
+    <div className="relative max-w-[2000px] mx-auto dark:bg-[#fff]">
       <Header />
       <Outlet />
       <ModalLayout/>
