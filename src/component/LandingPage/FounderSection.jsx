@@ -26,7 +26,7 @@ const FounderSection = () => {
       <div className="flex flex-col lg:flex-row justify-between gap-20 px-5 md:px-12 lg:py-16">
 
         <div className="flex-1">
-          <h1 className="text-3xl lg:text-4xl text-[#255946] font-bold mb-5 font-sora" >Note From Our Founder</h1>
+          <h1 className="text-2xl lg:text-4xl text-[#255946] font-bold mb-3 lg:mt-0 font-sora mt-5" >Note From Our Founder</h1>
           <p className="text-[#6e7673] text-[18px] tracking-wide" style={{ lineHeight: '2' }}>Recently, Africa has witnessed an increase in the number of agri-food businesses being launched daily to meet the insatiable food demands of Africans and the globe at large. Despite the growing number of agri-food businesses across the continent, data has shown that hundreds of agri-food businesses shut down operations daily across Africa due to low revenue and poor productivity.
             <button className=" text-blue-500 border-none outline-none" onClick={openExportModal}>...<span className="ml-1">Read more</span></button>
           </p>

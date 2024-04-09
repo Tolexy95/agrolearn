@@ -126,7 +126,7 @@ const ProjectSlide = () => {
       : settings.desktop;
 
   return (
-    <div className="mt-12 px-5 lg:px-8">
+    <div className="mt-12 px-5 lg:px-8 overflow-hidden">
       <h1 className='text-[#255946] font-sora text-4xl text-center mb-8 font-semibold capitalize'>Latest Project lists</h1>
       <Slider {...settingsToUse}
       
