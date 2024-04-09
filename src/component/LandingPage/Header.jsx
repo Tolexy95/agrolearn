@@ -13,37 +13,9 @@ import { CiLinkedin } from "react-icons/ci";
 
 
 
-const ContactInfo = () => (
-  <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora py-5">
-
-    <div className="flex items-center gap-2">
-      <FaRegClock className="w-5 h-5 text-[#00cc3c]" />
-      <h6>Mon - Fri 9:00 am - 4:00 pm</h6>
-    </div>
-
-    <div className="flex items-center gap-2">
-      <BsEnvelope className="w-5 h-5 text-[#00cc3c]" />
-      <h6>info@agrohive.co</h6>
-    </div>
-
-    <div className="flex items-center gap-5 text-[#6e7673]">
-      <NavLink to="https://www.instagram.com/agro_hive/">
-        <AiOutlineInstagram className="w-5 h-5 hover:text-[#00cc3c]" />
-      </NavLink>
-      <NavLink to="https://www.youtube.com/channel/UCCH8--Svxf2TO7TLDWdP3Kg">
-        <BsYoutube className="w-5 h-5 hover:text-[#00cc3c]" />
-      </NavLink>
-      <NavLink to="https://www.facebook.com/agrohive?_rdc=1&_rdr">
-        <FaFacebook className="w-5 h-5 hover:text-[#00cc3c]" />
-      </NavLink>
-
-      <NavLink to="https://www.linkedin.com/company/agrohive/">
-        <CiLinkedin className="w-5 h-5 hover:text-[#00cc3c]" />
-      </NavLink>
-    </div>
-
-  </div>
-);
+// const ContactInfo = () => (
+  
+// );
 
 
 const Header = () => {
@@ -62,7 +34,7 @@ const Header = () => {
           <img src={MobileLogo} alt='website Logo' className='object-cover w-10' />
         </NavLink>
 
-        <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold text-[#6e7673] gap-5 space-x-6 text-base ">
+        <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold text-[#6e7673] gap-5 space-x-6 text-base fixed ">
           <li>
             <NavLink
               to="/"
@@ -107,7 +79,35 @@ const Header = () => {
           </li>
         </ul>
 
-        <ContactInfo />
+   <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora py-5">
+
+    <div className="flex items-center gap-2">
+      <FaRegClock className="w-5 h-5 text-[#00cc3c]" />
+      <h6>Mon - Fri 9:00 am - 4:00 pm</h6>
+    </div>
+
+    <div className="flex items-center gap-2">
+      <BsEnvelope className="w-5 h-5 text-[#00cc3c]" />
+      <h6>info@agrohive.co</h6>
+    </div>
+
+    <div className="flex items-center gap-5 text-[#6e7673]">
+      <NavLink to="https://www.instagram.com/agro_hive/">
+        <AiOutlineInstagram className="w-5 h-5 hover:text-[#00cc3c]" />
+      </NavLink>
+      <NavLink to="https://www.youtube.com/channel/UCCH8--Svxf2TO7TLDWdP3Kg">
+        <BsYoutube className="w-5 h-5 hover:text-[#00cc3c]" />
+      </NavLink>
+      <NavLink to="https://www.facebook.com/agrohive?_rdc=1&_rdr">
+        <FaFacebook className="w-5 h-5 hover:text-[#00cc3c]" />
+      </NavLink>
+
+      <NavLink to="https://www.linkedin.com/company/agrohive/">
+        <CiLinkedin className="w-5 h-5 hover:text-[#00cc3c]" />
+      </NavLink>
+    </div>
+
+  </div>
 
         <div className={`${isNavOpen ? 'hidden' : 'block'} flex lg:hidden`} onClick={() => setIsNavOpen(!isNavOpen)}>
           <svg
