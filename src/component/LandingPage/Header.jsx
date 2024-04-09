@@ -14,8 +14,6 @@ import { CiLinkedin } from "react-icons/ci";
 
 
 const ContactInfo = () => (
-  // <div className="hidden lg:flex items-center justify-between p-2 px-16 text-sm font-bold font-inter">
-
   <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora py-5">
 
     <div className="flex items-center gap-2">
@@ -52,7 +50,7 @@ const Header = () => {
   const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
 
   return (
-    <div className={`${isNavOpen ? '' : 'bg-[#fff]'} lg:bg-white font-inter text-sm fixed w-full top-0 z-10`}>
+    <div className={`${isNavOpen ? '' : 'bg-[#fff]'} lg:bg-white font-inter text-sm fixed w-full top-0 z-10 overflow-hidden` }>
 
       <div className="flex items-center justify-between p-5 lg:px-12 lg:py-0 ">
 
