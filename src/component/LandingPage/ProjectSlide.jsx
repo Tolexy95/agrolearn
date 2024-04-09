@@ -160,7 +160,7 @@ const ProjectSlide = () => {
             <img src={project.imageUrl} alt={project.title} className="rounded-md w-full" />
 
             {hoveredIndex === index && (
-              <div className="absolute top-0 left-0 bottom-0 right-0 h-full mx-3 flex justify-center items-center bg-gray-900 bg-opacity-85 rounded-md">
+              <div className="absolute top-0 left-0 bottom-0 right-0 h-full md:mx-3 flex justify-center items-center bg-gray-900 bg-opacity-85 rounded-md">
                 <div className="max-w-lg p-6">
                   <h3 className="text-2xl text-gray-300 font-bold mb-4">{project.title}</h3>
                   <p className='text-gray-200 text-sm font-sora italic text-justify' style={{ lineHeight: '2' }}>{project.content}</p>
