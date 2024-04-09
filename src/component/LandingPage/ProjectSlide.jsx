@@ -126,29 +126,9 @@ const ProjectSlide = () => {
       : settings.desktop;
 
   return (
-    <div className="mt-12 px-5 lg:px-8 overflow-hidden">
-      <h1 className='text-[#255946] font-sora text-4xl text-center mb-8 font-semibold capitalize'>Latest Project lists</h1>
-      <Slider {...settingsToUse}
-      
-        // nextArrow={
-        //   <div className=''>
-        //     <div className="hidden lg:flex">
-        //       <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24">
-        //         <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-        //       </svg>
-        //     </div>
-        //   </div>
-        // }
-        // prevArrow={
-        //   <div className=''>
-        //   <div className="lg:-ml-2 hidden lg:flex">
-        //       <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24">
-        //         <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-        //       </svg>
-        //     </div>
-        //     </div>
-        // }
-      >
+    <div className="mt-12 px-5 lg:px-8 overflow-hidden lg:overflow-visible">
+      <h1 className='text-[#255946] font-sora text-2xl lg:text-4xl text-center mb-8 font-semibold capitalize'>Latest Project lists</h1>
+      <Slider {...settingsToUse}>
                   
         {projectData.map((project, index) => (
           <div
