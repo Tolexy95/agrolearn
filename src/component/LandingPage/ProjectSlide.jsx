@@ -130,24 +130,24 @@ const ProjectSlide = () => {
       <h1 className='text-[#255946] font-sora text-4xl text-center mb-8 font-semibold capitalize'>Latest Project lists</h1>
       <Slider {...settingsToUse}
       
-        nextArrow={
-          <div className=''>
-            <div className="hidden lg:flex">
-              <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24">
-                <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-              </svg>
-            </div>
-          </div>
-        }
-        prevArrow={
-          <div className=''>
-          <div className="lg:-ml-2 hidden lg:flex">
-              <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24">
-                <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-              </svg>
-            </div>
-            </div>
-        }
+        // nextArrow={
+        //   <div className=''>
+        //     <div className="hidden lg:flex">
+        //       <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24">
+        //         <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
+        //       </svg>
+        //     </div>
+        //   </div>
+        // }
+        // prevArrow={
+        //   <div className=''>
+        //   <div className="lg:-ml-2 hidden lg:flex">
+        //       <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24">
+        //         <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
+        //       </svg>
+        //     </div>
+        //     </div>
+        // }
       >
                   
         {projectData.map((project, index) => (
@@ -163,7 +163,7 @@ const ProjectSlide = () => {
               <div className="absolute top-0 left-0 bottom-0 right-0 h-full mx-3 flex justify-center items-center bg-gray-900 bg-opacity-85 rounded-md">
                 <div className="max-w-lg p-6">
                   <h3 className="text-2xl text-gray-300 font-bold mb-4">{project.title}</h3>
-                  <p className='text-gray-200 text-sm font-sora italic' style={{ lineHeight: '2' }}>{project.content}</p>
+                  <p className='text-gray-200 text-sm font-sora italic text-justify' style={{ lineHeight: '2' }}>{project.content}</p>
                 </div>
               </div>
             )}

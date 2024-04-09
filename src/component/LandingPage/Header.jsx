@@ -4,7 +4,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import WebsiteLogo from "../../assets/AgroHive_logo.png";
-import MobileLogo from "../../assets/AgroHive_logo_shape.png" 
+import MobileLogo from "../../assets/AgroHive_logo_shape.png"
 import { FaRegClock } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { SideBarContext } from "../../context/SideBarProvider";
@@ -52,19 +52,17 @@ const Header = () => {
   const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
 
   return (
-    <div className= {`${isNavOpen ? '' : 'bg-[#fff]'} lg:bg-white font-inter text-sm sticky top-0 z-10`}>
-   
+    <div className={`${isNavOpen ? '' : 'bg-[#fff]'} lg:bg-white font-inter text-sm fixed w-full top-0 z-10`}>
+
       <div className="flex items-center justify-between p-5 lg:px-12 lg:py-0 ">
-        
-            <NavLink to="/" className="w-40 hidden lg:flex">
-              <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
-            </NavLink>
 
-            <NavLink  to="/" className="flex lg:hidden">
-            <img src={MobileLogo} alt='website Logo' className='object-cover w-10' />
-            </NavLink>
+        <NavLink to="/" className="w-40 hidden lg:flex">
+          <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
+        </NavLink>
 
-         
+        <NavLink to="/" className="flex lg:hidden">
+          <img src={MobileLogo} alt='website Logo' className='object-cover w-10' />
+        </NavLink>
 
         <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold text-[#6e7673] gap-5 space-x-6 text-base ">
           <li>

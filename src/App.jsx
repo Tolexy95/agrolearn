@@ -11,7 +11,7 @@ import PartnerPage from "./pages/Partners";
 import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
 import Blog from "./pages/Blog";
-import SinglePost from "./pages/SinglePost";
+
 
 
 
@@ -28,7 +28,6 @@ function App() {
         <Route  path="/service" element={<ServicesPage />} />
         <Route  path="/partner" element={<PartnerPage />} />
         <Route  path="/blog" element={<Blog/>} />
-        <Route  path="/blog/:slug" element={<SinglePost/>} />
         </Route>
        
 
