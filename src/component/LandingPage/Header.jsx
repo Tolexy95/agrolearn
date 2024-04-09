@@ -34,7 +34,7 @@ const Header = () => {
           <img src={MobileLogo} alt='website Logo' className='object-cover w-10' />
         </NavLink>
 
-        <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold text-[#6e7673] gap-5 space-x-6 text-base fixed ">
+        <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold text-[#6e7673] gap-5 space-x-6 text-base">
           <li>
             <NavLink
               to="/"
