@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { format } from 'date-fns'
 import Button from '../Button/CustomButton';
 import { ButtonSize, ButtonState } from '../Button/ButtonStyles';
+import Loader from '../Loader/loader';
 
 const BlogCard = () => {
   const navigate = useNavigate();
@@ -12,28 +13,33 @@ const BlogCard = () => {
   useEffect(() => {
     const fetchStories = async () => {
       try {
-        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@agrohive');
-        const data = await response.json();
-        setStories(data.items.slice(0, 3).map(item => {
-          // Extracting main image and content from description
-          const parser = new DOMParser();
-          const htmlContent = parser.parseFromString(item.description, 'text/html');
-          const imgElement = htmlContent.querySelector('figure img');
-          const mainImage = imgElement ? imgElement.getAttribute('src') : '';
-          const paragraphs = Array.from(htmlContent.querySelectorAll('p')).map(p => p.textContent);
-          const listItems = Array.from(htmlContent.querySelectorAll('li')).map(li => li.textContent);
+        // Simulating a delay of 2 seconds
+        setTimeout(async () => {
+          const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@agrohive');
+          const data = await response.json();
+          setStories(data.items.slice(0, 3).map(item => {
+            // Extracting main image and content from description
+            const parser = new DOMParser();
+            const htmlContent = parser.parseFromString(item.description, 'text/html');
+            const imgElement = htmlContent.querySelector('figure img');
+            const mainImage = imgElement ? imgElement.getAttribute('src') : '';
+            const paragraphs = Array.from(htmlContent.querySelectorAll('p')).map(p => p.textContent);
+            const listItems = Array.from(htmlContent.querySelectorAll('li')).map(li => li.textContent);
 
-          return {
-            title: item.title,
-            author: item.author,
-            pubDate: item.pubDate,
-            link: item.link,
-            mainImage,
-            content: { paragraphs, listItems }
-          };
-        }));
+            return {
+              title: item.title,
+              author: item.author,
+              pubDate: item.pubDate,
+              link: item.link,
+              mainImage,
+              content: { paragraphs, listItems }
+            };
+          }));
+          setLoading(false); // Set loading to false after data is fetched
+        }, 10000); // Delay of 2 seconds
       } catch (error) {
         console.error('Error fetching stories:', error);
+        setLoading(false); // Set loading to false in case of error
       }
     };
 
@@ -89,7 +95,10 @@ const BlogCard = () => {
             </div>
           ))
         ) : (
-          <div>Loading...</div>
+          <div className="translate-x-[110%] translate-y-1/4">
+          <Loader className="" />
+        </div>
+        
         )}
       </div>
       <div className='mt-8 flex justify-end'>

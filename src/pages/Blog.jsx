@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 import { format } from 'date-fns'
-
+import Loader from "../component/Loader/loader";
 
 
 const Blog = () => {
@@ -11,6 +11,7 @@ const Blog = () => {
     useEffect(() => {
         const fetchStories = async () => {
             try {
+                setTimeout(async () => {
                 const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@agrohive');
                 const data = await response.json();
                 setPost(data.items.map(item => {
@@ -31,6 +32,7 @@ const Blog = () => {
                         content: { paragraphs, listItems }
                     };
                 }));
+            }, 10000);
             } catch (error) {
                 console.error('Error fetching stories:', error);
             }
@@ -43,7 +45,9 @@ const Blog = () => {
         <div className="px-5 md:px-12 mt-10 font-inter">
 
             {!posts ? (
-                <h1>Loading...</h1>
+                 <div className=" top-1/2 left-1/2 translate-x-1/2 translate-y-1/4">
+                 <Loader className="" />
+               </div>
             ) : (
                 <div>
                     {

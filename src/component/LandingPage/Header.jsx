@@ -13,16 +13,27 @@ import { CiLinkedin } from "react-icons/ci";
 
 
 
-// const ContactInfo = () => (
-  
-// );
+const ContactInfo = () => (
+  <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora">
+
+  <div className="flex items-center gap-2">
+    <FaRegClock className="w-5 h-5 text-[#00cc3c]" />
+    <h6>Mon - Fri 9:00 am - 4:00 pm</h6>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <BsEnvelope className="w-5 h-5 text-[#00cc3c]" />
+    <h6>info@agrohive.co</h6>
+  </div>
+</div>
+);
 
 
 const Header = () => {
   const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
 
   return (
-    <div className={`${isNavOpen ? '' : 'bg-[#fff]'} lg:bg-white font-inter text-sm fixed w-full top-0 z-10 overflow-hidden` }>
+    <div className={`${isNavOpen ? '' : 'bg-[#fff]'} lg:bg-white  font-inter text-sm fixed w-full top-0 z-10 overflow-hidden` }>
 
       <div className="flex items-center justify-between p-5 lg:px-12 lg:py-0 ">
 
@@ -38,76 +49,66 @@ const Header = () => {
           <li>
             <NavLink
               to="/"
-              className=" hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
+              className="hover-text">
               <span className="">Home</span>
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/about"
-              className=" hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
+              className="hover-text" >
               About
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/service"
-              className="hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
+              className="hover-text">
               Services
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/partner"
-              className="hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
+              className="hover-text">
               Our partners
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/courses"
-              className=" hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
+              className="hover-text" >
               Courses
             </NavLink>
           </li>
+          
           <li>
             <NavLink
               to="/contact"
-              className=" hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
+              className="hover-text" >
               Contact
             </NavLink>
           </li>
         </ul>
 
-   <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora py-5">
+  <ContactInfo/>
 
-    <div className="flex items-center gap-2">
-      <FaRegClock className="w-5 h-5 text-[#00cc3c]" />
-      <h6>Mon - Fri 9:00 am - 4:00 pm</h6>
-    </div>
+  <div className="hidden lg:flex flex-col gap-2 my-2 _social-links  text-[#6e7673]">
+    <NavLink to="https://www.instagram.com/agro_hive/">
+      <AiOutlineInstagram className=" w-[21px] h-[21px]  hover:text-[#00cc3c]" />
+    </NavLink>
+    <NavLink to="https://www.youtube.com/channel/UCCH8--Svxf2TO7TLDWdP3Kg">
+      <BsYoutube className="w-[21px] h-[21px]  hover:text-[#00cc3c]" />
+    </NavLink>
+    <NavLink to="https://www.facebook.com/agrohive?_rdc=1&_rdr">
+      <FaFacebook className="w-[21px] h-[21px]  hover:text-[#00cc3c]" />
+    </NavLink>
 
-    <div className="flex items-center gap-2">
-      <BsEnvelope className="w-5 h-5 text-[#00cc3c]" />
-      <h6>info@agrohive.co</h6>
-    </div>
-
-    <div className="flex items-center gap-5 text-[#6e7673]">
-      <NavLink to="https://www.instagram.com/agro_hive/">
-        <AiOutlineInstagram className="w-5 h-5 hover:text-[#00cc3c]" />
-      </NavLink>
-      <NavLink to="https://www.youtube.com/channel/UCCH8--Svxf2TO7TLDWdP3Kg">
-        <BsYoutube className="w-5 h-5 hover:text-[#00cc3c]" />
-      </NavLink>
-      <NavLink to="https://www.facebook.com/agrohive?_rdc=1&_rdr">
-        <FaFacebook className="w-5 h-5 hover:text-[#00cc3c]" />
-      </NavLink>
-
-      <NavLink to="https://www.linkedin.com/company/agrohive/">
-        <CiLinkedin className="w-5 h-5 hover:text-[#00cc3c]" />
-      </NavLink>
-    </div>
-
+    <NavLink to="https://www.linkedin.com/company/agrohive/">
+      <CiLinkedin className="w-[21px] h-[21px]  hover:text-[#00cc3c]" />
+    </NavLink>
   </div>
+
 
         <div className={`${isNavOpen ? 'hidden' : 'block'} flex lg:hidden`} onClick={() => setIsNavOpen(!isNavOpen)}>
           <svg
