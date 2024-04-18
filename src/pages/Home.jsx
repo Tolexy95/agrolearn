@@ -9,7 +9,7 @@ import BlogCard from '../component/LandingPage/BlogCard';
 
 const Home = () => {
   return (
-    <div className=''>
+    <div className='mt-28'>
       <HeroSection2 />
       <FeatureSection />
       <Hr />

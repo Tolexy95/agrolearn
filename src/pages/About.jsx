@@ -3,8 +3,8 @@ import React from 'react';
 
 const AboutPage = () => {
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-4">About Us</h1>
+    <div className="mt-28 bg-[#f6f5f283]">
+      <h1 className="text-3xl font-bold flex items-center justify-center h-screen">About Us</h1>
     </div>
   );
 };

@@ -11,7 +11,6 @@ const Blog = () => {
     useEffect(() => {
         const fetchStories = async () => {
             try {
-                setTimeout(async () => {
                 const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@agrohive');
                 const data = await response.json();
                 setPost(data.items.map(item => {
@@ -32,7 +31,6 @@ const Blog = () => {
                         content: { paragraphs, listItems }
                     };
                 }));
-            }, 10000);
             } catch (error) {
                 console.error('Error fetching stories:', error);
             }
@@ -42,10 +40,10 @@ const Blog = () => {
     }, []);
 
     return (
-        <div className="px-5 md:px-12 mt-10 font-inter">
+        <div className="px-5 md:px-12 mt-28 font-inter">
 
             {!posts ? (
-                 <div className=" top-1/2 left-1/2 translate-x-1/2 translate-y-1/4">
+                 <div className="">
                  <Loader className="" />
                </div>
             ) : (
@@ -55,8 +53,8 @@ const Blog = () => {
                             <div className="relative" >
                                 <img src={posts[2].mainImage} alt={posts[2].title} className="w-screen h-96  hobject-fill  rounded-2xl" />
 
-                                <div className=" absolute bottom-16 left-8 ">
-                                    <h2 className="text-[#255946ab] text-2xl max-w-[400px] text-justify font-bold capitalize tracking-tighter ">{posts[2].title}</h2>
+                                <div className=" absolute bottom-8 left-4 md:bottom-16 md:left-8 ">
+                                    <h2 className="text-[#255946ab] md:text-2xl max-w-[400px] md:text-justify font-bold capitalize md:tracking-tighter ">{posts[2].title}</h2>
 
                                     <p className="max-w-96 font-bold mt-5 text-[#fffc]" style={{ lineHeight: '2' }}>
                                         {posts[0].content.paragraphs.reduce((acc, paragraph) => {

@@ -14,7 +14,7 @@ import { CiLinkedin } from "react-icons/ci";
 
 
 const ContactInfo = () => (
-  <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora">
+  <div className="hidden lg:flex flex-col gap-3 cursor-pointer font-sora my-3">
 
   <div className="flex items-center gap-2">
     <FaRegClock className="w-5 h-5 text-[#00cc3c]" />
@@ -25,6 +25,23 @@ const ContactInfo = () => (
     <BsEnvelope className="w-5 h-5 text-[#00cc3c]" />
     <h6>info@agrohive.co</h6>
   </div>
+
+  <div className="flex gap-5  text-[#6e7673]">
+    <NavLink to="https://www.instagram.com/agro_hive/">
+      <AiOutlineInstagram className=" w-5 h-5  hover:text-[#00cc3c]" />
+    </NavLink>
+    <NavLink to="https://www.youtube.com/channel/UCCH8--Svxf2TO7TLDWdP3Kg">
+      <BsYoutube className="w-5 h-5  hover:text-[#00cc3c]" />
+    </NavLink>
+    <NavLink to="https://www.facebook.com/agrohive?_rdc=1&_rdr">
+      <FaFacebook className="w-5 h-5  hover:text-[#00cc3c]" />
+    </NavLink>
+
+    <NavLink to="https://www.linkedin.com/company/agrohive/">
+      <CiLinkedin className="w-5 h-5  hover:text-[#00cc3c]" />
+    </NavLink>
+  </div>
+
 </div>
 );
 
@@ -60,6 +77,7 @@ const Header = () => {
               About
             </NavLink>
           </li>
+          
           <li>
             <NavLink
               to="/service"
@@ -92,22 +110,6 @@ const Header = () => {
         </ul>
 
   <ContactInfo/>
-
-  <div className="hidden lg:flex flex-col gap-2 my-2 _social-links  text-[#6e7673]">
-    <NavLink to="https://www.instagram.com/agro_hive/">
-      <AiOutlineInstagram className=" w-[21px] h-[21px]  hover:text-[#00cc3c]" />
-    </NavLink>
-    <NavLink to="https://www.youtube.com/channel/UCCH8--Svxf2TO7TLDWdP3Kg">
-      <BsYoutube className="w-[21px] h-[21px]  hover:text-[#00cc3c]" />
-    </NavLink>
-    <NavLink to="https://www.facebook.com/agrohive?_rdc=1&_rdr">
-      <FaFacebook className="w-[21px] h-[21px]  hover:text-[#00cc3c]" />
-    </NavLink>
-
-    <NavLink to="https://www.linkedin.com/company/agrohive/">
-      <CiLinkedin className="w-[21px] h-[21px]  hover:text-[#00cc3c]" />
-    </NavLink>
-  </div>
 
 
         <div className={`${isNavOpen ? 'hidden' : 'block'} flex lg:hidden`} onClick={() => setIsNavOpen(!isNavOpen)}>

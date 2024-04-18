@@ -95,7 +95,7 @@ const BlogCard = () => {
             </div>
           ))
         ) : (
-          <div className="translate-x-[110%] translate-y-1/4">
+          <div className="lg:translate-x-[110%] lg:translate-y-1/4 md:translate-x-[60%] md:translate-y-1/4">
           <Loader className="" />
         </div>
         
