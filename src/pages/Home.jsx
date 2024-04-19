@@ -4,18 +4,18 @@ import Hr from '../component/LandingPage/Hr';
 import FeatureSection from '../component/LandingPage/Feature';
 import FounderSection from '../component/LandingPage/FounderSection';
 import ProjectSlide from '../component/LandingPage/ProjectSlide';
-import BlogCard from '../component/LandingPage/BlogCard';
+import African from '../component/LandingPage/African';
 
 
 const Home = () => {
   return (
     <div className='mt-28'>
       <HeroSection2 />
-      <FeatureSection />
-      <Hr />
-      <FounderSection />
-      <ProjectSlide />
-      <BlogCard />
+     <FeatureSection/>
+       <Hr/>
+       <FounderSection/>
+       <ProjectSlide/>
+       <African/>
     </div>
 
   )
