@@ -11,15 +11,15 @@ const Hr = () => {
         <>
             <div className={`font-inter px-5 md:px-12 mt-12 flex  flex-col lg:flex-row gap-5 mb-36 lg:gap-11 lg:p-10 relative`}>
 
-                <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png " className="absolute top-[95%] md:top-[90%] lg:top-[70%] lg:left-[-8%] left-0 -z-30" alt="" />
+                <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png " className="absolute top-[95%] md:top-[90%] lg:top-[70%]  left-0 -z-10" alt="" />
 
 
-                <div className="md:flex md:relative lg:items-start w-full -z-10">
+                <div className="md:flex md:relative lg:items-start w-full">
                     <div>
                         <img src={picture} className="rounded-md lg:ml-12" alt="" />
                     </div>
 
-                    <div className='md:w-[520px] mt-5 md:mt-0 md:absolute md:top-[75%] md:left-[30%] lg:top-[40%] lg:left-[-38px]'>
+                    <div className='md:w-[520px] mt-5 md:mt-0 md:absolute md:top-[75%] md:left-[30%] lg:top-[52%] lg:left-[-38px]'>
                         <img
                             src={picture2}
                             className="rounded-md"
@@ -28,7 +28,7 @@ const Hr = () => {
                     </div>
                 </div>
 
-                <div className='md:px-5  lg:p-24 lg:w-full lg:bg-white lg:-ml-20 '>
+                <div className='md:px-5  lg:p-24 lg:w-full'>
                     <h1 className='mt-9 font-semibold text-[#9ea5a2] md:mt-52 lg:mt-0 text-sm mb-3 tracking-[0.2em]' style={{ lineHeight: '1.3' }}>WELCOME TO AGROHIVE</h1>
 
                     <h2 className="text-2xl md:text-[35px] lg:text-[2.8rem] text-[#255946] font-semibold leading-loose" style={{ lineHeight: '1.3' }}>

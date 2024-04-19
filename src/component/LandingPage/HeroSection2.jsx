@@ -8,7 +8,7 @@ import { ButtonSize, ButtonState } from '../Button/ButtonStyles';
 
 const HeroSection2 = () => {
   return (
-    <div className={`flex flex-col md:flex-row p-5 md:p-12 lg:py-20  md:gap-6 lg:gap-5 justify-between font-inter bg-[#f6f5f283]`}>
+    <div className={`flex flex-col md:flex-row p-5 md:p-12 lg:py-8  md:gap-6 lg:gap-5 justify-between font-inter bg-[#f6f5f283]`}>
 
       <div className='md:max-w-72 lg:max-w-[800px]' >
         <h1 className="text-2xl lg:text-[2.8rem] text-[#255946] font-sora font-semibold leading-loose" style={{ lineHeight: '1.3' }}>
@@ -19,7 +19,7 @@ const HeroSection2 = () => {
 
         <p className="text-base mt-8 lg:text-xl lg:w-[600px]  leading-8 tracking-widest">
           Access and hire well trained agricultural workforce that meets your
-          agric-food business skills needs.
+          agri-food business skills needs.
         </p>
 
         <div className="hidden md:flex mt-12 lg:w-[500px]">

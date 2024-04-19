@@ -10,6 +10,8 @@ import CoursesPage from "./pages/Courses";
 import PartnerPage from "./pages/Partners";
 import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
+import Blog from "./pages/Blog";
+
 
 
 
@@ -25,6 +27,7 @@ function App() {
         <Route  path="/contact" element={<ContactPage />} />
         <Route  path="/service" element={<ServicesPage />} />
         <Route  path="/partner" element={<PartnerPage />} />
+        <Route  path="/blog" element={<Blog/>} />
         </Route>
        
 
