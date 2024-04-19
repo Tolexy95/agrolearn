@@ -1,7 +1,6 @@
 import { MODAL_BODY_TYPES } from '../../utils/globalConstant';
 import { useSelector, useDispatch } from 'react-redux';
 import { closeModal } from '../../redux/features/modalSlice';
-import ProjectModal from '../Modal/ProjectModal';
 import FounderModal from '../Modal/FounderModal';
 
 
@@ -18,7 +17,7 @@ function ModalLayout() {
     <>
       {/* Put this part before </body> tag */}
       <div className={`modal ${isOpen ? 'modal-open' : ''}`}>
-        <div className={`modal-box  ${size === 'lg' ? 'max-w-5xl' : 'max-w-[50rem]'}`}>
+        <div className={`modal-box  ${size === 'lg' ? 'max-w-5xl' : 'max-w-[50rem]'} dark:bg-white`}>
           <button className="btn btn-circle btn-sm absolute right-2 top-2" onClick={() => close()}>
             ✕
           </button>
@@ -26,8 +25,6 @@ function ModalLayout() {
           {/* Loading modal body according to different modal type */}
           {
             {
-              [MODAL_BODY_TYPES.PROJECT_MODAL]: 
-              <ProjectModal extraObject={extraObject} closeModal={close} />,
               [MODAL_BODY_TYPES.FOUNDER_MODAL]: 
               <FounderModal extraObject={extraObject} closeModal={close} />,
              

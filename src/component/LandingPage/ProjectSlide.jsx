@@ -126,29 +126,9 @@ const ProjectSlide = () => {
       : settings.desktop;
 
   return (
-    <div className="pt-8 px-5 lg:px-8 dark:bg-white bg-[#c6c6d3] text-[#F5F5F5 ]">
-      <h1 className='text-[#255946] font-sora text-4xl text-center mb-8 font-semibold capitalize'>Latest Project lists</h1>
-      <Slider {...settingsToUse}
-      
-        nextArrow={
-          <div className=''>
-            <div className="hidden lg:flex">
-              <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24">
-                <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-              </svg>
-            </div>
-          </div>
-        }
-        prevArrow={
-          <div className=''>
-          <div className="lg:-ml-2 hidden lg:flex">
-              <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24">
-                <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-              </svg>
-            </div>
-            </div>
-        }
-      >
+    <div className="mt-12 px-5 lg:px-8 overflow-hidden lg:overflow-visible">
+      <h1 className='text-[#255946] font-sora text-2xl lg:text-4xl text-center mb-8 font-semibold capitalize'>Latest Project lists</h1>
+      <Slider {...settingsToUse}>
                   
         {projectData.map((project, index) => (
           <div
@@ -160,10 +140,10 @@ const ProjectSlide = () => {
             <img src={project.imageUrl} alt={project.title} className="rounded-md w-full" />
 
             {hoveredIndex === index && (
-              <div className="absolute top-0 left-0 bottom-0 right-0 h-full mx-3 flex justify-center items-center bg-[#00B2FF] dark:bg-gray-900 bg-opacity-85 rounded-md">
+              <div className="absolute top-0 left-0 bottom-0 right-0 h-full md:mx-3 flex justify-center items-center bg-gray-900 bg-opacity-85 rounded-md">
                 <div className="max-w-lg p-6">
                   <h3 className="text-2xl text-gray-300 font-bold mb-4">{project.title}</h3>
-                  <p className='text-gray-200 text-sm font-sora italic' style={{ lineHeight: '2' }}>{project.content}</p>
+                  <p className='text-gray-200 text-sm font-sora italic text-justify' style={{ lineHeight: '2' }}>{project.content}</p>
                 </div>
               </div>
             )}
