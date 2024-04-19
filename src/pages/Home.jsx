@@ -5,6 +5,7 @@ import FeatureSection from '../component/LandingPage/Feature';
 import FounderSection from '../component/LandingPage/FounderSection';
 import ProjectSlide from '../component/LandingPage/ProjectSlide';
 import African from '../component/LandingPage/African';
+import Footer from '../component/LandingPage/Footer';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
        <FounderSection/>
        <ProjectSlide/>
        <African/>
+       <Footer/>
     </div>
 
   )
