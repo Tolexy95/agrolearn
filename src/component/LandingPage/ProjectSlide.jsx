@@ -126,7 +126,7 @@ const ProjectSlide = () => {
       : settings.desktop;
 
   return (
-    <div className="mt-12 px-5 lg:px-8">
+    <div className="pt-8 px-5 lg:px-8 dark:bg-white bg-[#c6c6d3] text-[#F5F5F5 ]">
       <h1 className='text-[#255946] font-sora text-4xl text-center mb-8 font-semibold capitalize'>Latest Project lists</h1>
       <Slider {...settingsToUse}
       
@@ -160,7 +160,7 @@ const ProjectSlide = () => {
             <img src={project.imageUrl} alt={project.title} className="rounded-md w-full" />
 
             {hoveredIndex === index && (
-              <div className="absolute top-0 left-0 bottom-0 right-0 h-full mx-3 flex justify-center items-center bg-gray-900 bg-opacity-85 rounded-md">
+              <div className="absolute top-0 left-0 bottom-0 right-0 h-full mx-3 flex justify-center items-center bg-[#00B2FF] dark:bg-gray-900 bg-opacity-85 rounded-md">
                 <div className="max-w-lg p-6">
                   <h3 className="text-2xl text-gray-300 font-bold mb-4">{project.title}</h3>
                   <p className='text-gray-200 text-sm font-sora italic' style={{ lineHeight: '2' }}>{project.content}</p>

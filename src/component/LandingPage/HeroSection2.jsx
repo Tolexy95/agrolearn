@@ -8,13 +8,13 @@ import { ButtonSize, ButtonState } from '../Button/ButtonStyles';
 
 const HeroSection2 = () => {
   return (
-    <div className={`flex flex-col md:flex-row p-5 md:p-12 lg:py-20  md:gap-6 lg:gap-5 justify-between font-inter bg-[#f6f5f283]`}>
+    <div className={`flex flex-col md:flex-row p-5 md:p-12 lg:py-20 md:gap-6 lg:gap-5 justify-between font-inter bg-[#408f49] dark:bg-[#f6f5f283]`}>
 
       <div className='md:max-w-72 lg:max-w-[800px]' >
-        <h1 className="text-2xl lg:text-[2.8rem] text-[#255946] font-sora font-semibold leading-loose" style={{ lineHeight: '1.3' }}>
+        <h1 className="text-2xl lg:text-[2.8rem] text-[#e0e0e0] dark:text-[#255946] font-sora font-semibold leading-loose" style={{ lineHeight: '1.3' }}>
           Training, Staff Hiring <br />and Workforce Management
         </h1>
-        <p className='text-sm italic mt-3 lg:mt-5 text-[#255946be] lg:text-2xl'>Made Easy for
+        <p className='text-sm italic mt-3 lg:mt-5 text-[#e0e0e0] dark:text-[#255946be] lg:text-2xl'>Made Easy for
           Agri-Food Businesses</p>
 
         <p className="text-base mt-8 lg:text-xl lg:w-[600px]  leading-8 tracking-widest">

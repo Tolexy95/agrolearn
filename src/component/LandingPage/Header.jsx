@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { BsEnvelope } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaUnderline } from "react-icons/fa";
 import WebsiteLogo from "../../assets/AgroHive_logo.png";
 import MobileLogo from "../../assets/AgroHive_logo_shape.png" 
 import { FaRegClock } from "react-icons/fa";
@@ -52,9 +52,9 @@ const Header = () => {
   const { isNavOpen, setIsNavOpen } = useContext(SideBarContext);
 
   return (
-    <div className= {`${isNavOpen ? '' : 'bg-[#fff]'} lg:bg-white font-inter text-sm sticky top-0 z-10`}>
+    <div className= {`${isNavOpen ? '' : 'bg-[#fff]'} text-[#d9d9d9] font-inter text-sm sticky top-0 z-10`}>
    
-      <div className="flex items-center justify-between p-5 lg:px-12 lg:py-0 ">
+      <div className="flex items-center justify-between p-5 lg:px-12 bg-[#355e35] dark:bg-white lg:py-0 ">
         
             <NavLink to="/" className="w-40 hidden lg:flex">
               <img src={WebsiteLogo} alt='website Logo' className='object-cover' />
@@ -66,46 +66,46 @@ const Header = () => {
 
          
 
-        <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold text-[#6e7673] gap-5 space-x-6 text-base ">
+        <ul className="DESKTOP-MENU hidden lg:flex items-center font-bold dark:text-[#6e7673] gap-5 space-x-6 text-base ">
           <li>
             <NavLink
               to="/"
-              className=" hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
+              className=" dark:hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md py-1 px-3 rounded-lg hover:underline underline-offset-8 hover:decoration-2 hover:pb-2">
               <span className="">Home</span>
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/about"
-              className=" hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
+              className="dark:hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md py-1 px-3 rounded-lg hover:underline underline-offset-8 hover:decoration-2 hover:pb-2" >
               About
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/service"
-              className="hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
+              className="dark:hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md py-1 px-3 rounded-lg hover:underline underline-offset-8 hover:decoration-2 hover:pb-2">
               Services
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/partner"
-              className="hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md">
+              className="dark:hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md py-1 px-3 rounded-lg hover:underline underline-offset-8 hover:decoration-2 hover:pb-2">
               Our partners
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/courses"
-              className=" hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
+              className="dark:hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md py-1 px-3 rounded-lg hover:underline underline-offset-8 hover:decoration-2 hover:pb-2" >
               Courses
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/contact"
-              className=" hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md" >
+              className="dark:hover:text-[#255946] hover:text-lg hover:font-semibold shadow-md py-1 px-3 rounded-lg hover:underline underline-offset-8 hover:decoration-2 hover:pb-2" >
               Contact
             </NavLink>
           </li>

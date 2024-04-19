@@ -12,15 +12,18 @@ import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
 import Blog from "./pages/Blog";
 import SinglePost from "./pages/SinglePost";
+import Switcher from './component/Switcher';
+
 
 
 
 function App() {
   return (
     <> 
- 
+       <Switcher/>
       <Routes>
         <Route element={<AppLayout/>}>
+       
         <Route index exact path="/" element={<Home />} />
         <Route  path="/about" element={<AboutPage />} />
         <Route  path="/courses" element={<CoursesPage />} />
