@@ -10,8 +10,8 @@ import AboutComponent from '../component/LandingPage/AboutComponent';
 
 const AboutPage = () => {
   return (
-    <div className="">
-    <h1 className="text-[38px] font-bold pb-24 text-[#255946] text-center">
+    <div className="mt-28">
+    <h1 className="text-[38px] font-bold  text-[#255946] text-center">
      ABOUT US
    </h1>
    <AboutComponent
@@ -19,6 +19,7 @@ const AboutPage = () => {
      description2="AgroHive, Africa’s fast growing human resource and workforce management agritech company, is boldly tackling one of the major challenges encountered by agri-food businesses across Africa, which is to have easy access to blended agricultural training, a consistent supply of appropriately trained agricultural workforce that meets their skills needs and a digital workforce management platform to manage and track the performance of their staff."
      description4="We collaborate with key stakeholders in the agricultural industry to train, upskill and certify agricultural talents. Once certified, agricultural talents are outsourced to agribusinesses through AgroHive’s digital hiring platform."
    />
+   
    <div className="flex flex-col lg:flex-row lg:mx-20 mx-1 lg:space-x-10 pb-20">
      <div className="flex-1 ml-2 mb-10">
        <h1 className="text-left text-[#255946] leading-[40px] text-[38px] font-bold pb-8">
