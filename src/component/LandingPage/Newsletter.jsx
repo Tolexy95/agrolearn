@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import newsletterImg from "../../assets/newsletterImg.png";
 
 const Newsletter = () => {
   return (
@@ -6,6 +7,6 @@ const Newsletter = () => {
     <h1>Newsletter</h1>
    </div>
   );
-}
+};
 
 export default Newsletter;
