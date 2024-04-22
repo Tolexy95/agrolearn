@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { BsEnvelope } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
-import { FaFacebook, FaUnderline } from "react-icons/fa";
+import {  } from "react-icons/fa";
 import WebsiteLogo from "../../assets/AgroHive_logo.png";
 import MobileLogo from "../../assets/AgroHive_logo_shape.png"
-import { FaRegClock } from "react-icons/fa";
+import { FaRegClock, FaLinkedinIn, FaFacebook } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { SideBarContext } from "../../context/SideBarProvider";
 import SideBar from "./SideBar";
-import { CiLinkedin } from "react-icons/ci";
+
 
 
 
@@ -38,7 +38,7 @@ const ContactInfo = () => (
     </NavLink>
 
     <NavLink to="https://www.linkedin.com/company/agrohive/">
-      <CiLinkedin className="w-5 h-5  hover:text-[#00cc3c]" />
+    <FaLinkedinIn className="w-5 h-5  hover:text-[#00cc3c]"/>
     </NavLink>
   </div>
 
