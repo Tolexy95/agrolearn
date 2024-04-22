@@ -18,7 +18,7 @@ import Blog from "./pages/Blog";
 function App() {
   return (
     <> 
-       <Switcher/>
+      
       <Routes>
         <Route element={<AppLayout/>}>
        
