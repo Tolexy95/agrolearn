@@ -18,11 +18,12 @@ const Footer = () => {
 
   return (
     <>
-      <div className="bg-[#2b5e4c] mt-24 lg:px-12 px-5 font-inter">
-        <div className="flex lg:flex-row flex-col justify-between mt-7  ">
-          <div className="mt-8  text-white">
+      <div className="bg-[#2b5e4c] -mt-7 lg:px-12 px-5 font-inter">
+        <div className="flex lg:flex-row flex-col justify-between mt-7 ">
+         
+        <div className="mt-8  text-white">
             <img src={agrohive} alt="logo" className="h-10" />
-            <p className="mb-6 mt-6 w-[300px] leading-8">
+            <p className="mb-6 mt-6 lg:w-[300px] leading-8">
               Access and hire well trained agricultural workforce that meets
               your agri-food business skills needs.
             </p>
@@ -42,6 +43,9 @@ const Footer = () => {
               </NavLink>
             </div>
           </div>
+          
+          
+          
           <div className="mt-8 text-white">
             <h1 className="mb-6 text-xl font-bold">links</h1>
             <ul className="flex flex-col gap-4 text-base">
@@ -97,7 +101,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <hr className="w-full" />
+            <hr/>
           </div>
         </div>
 

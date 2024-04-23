@@ -4,8 +4,7 @@ import Hr from '../component/LandingPage/Hr';
 import FeatureSection from '../component/LandingPage/Feature';
 import FounderSection from '../component/LandingPage/FounderSection';
 import ProjectSlide from '../component/LandingPage/ProjectSlide';
-
-
+import BlogCard from '../component/LandingPage/BlogCard';
 
 const Home = () => {
   return (
@@ -15,6 +14,7 @@ const Home = () => {
        <Hr/>
        <FounderSection/>
        <ProjectSlide/>
+      <BlogCard/>
     </div>
 
   )
