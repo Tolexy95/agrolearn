@@ -18,9 +18,10 @@ import Blog from "./pages/Blog";
 function App() {
   return (
     <> 
- 
+      
       <Routes>
         <Route element={<AppLayout/>}>
+       
         <Route index exact path="/" element={<Home />} />
         <Route  path="/about" element={<AboutPage />} />
         <Route  path="/courses" element={<CoursesPage />} />

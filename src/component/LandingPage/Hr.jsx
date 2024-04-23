@@ -14,8 +14,7 @@ const Hr = () => {
                 description3="Our goal is to simplify this process, while you focus on increasing your yields."
             />               
         </>
+  );
+};
 
-    )
-}
-
-export default Hr
+export default Hr;
