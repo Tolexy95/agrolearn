@@ -10,7 +10,7 @@ import AboutComponent from '../component/LandingPage/AboutComponent';
 
 const AboutPage = () => {
   return (
-    <div className="mt-28">
+    <div className="dark:mt-20 dark:lg:mt-[108px] mt-28">
     <h1 className="text-[38px] font-bold  text-[#255946] text-center">
      ABOUT US
    </h1>

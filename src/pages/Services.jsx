@@ -6,7 +6,7 @@ import ServiceTwo from '../component/Service2';
 
 const ServicesPage = () => {
   return (
-    <div className="">
+    <div className="dark:mt-20 dark:lg:mt-[108px] mt-28">
       <h1 className="text-[38px] font-bold pb-24 text-[#255946] text-center">
         OUR SERVICES
       </h1>
