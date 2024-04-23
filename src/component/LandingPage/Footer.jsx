@@ -44,7 +44,7 @@ const Footer = () => {
               <p className="mb-6">Blog </p>
             </div>
           </div>
-          <div className="mt-8  text-white">
+          <div className="text-white">
             <h1 className="mb-6  text-xl font-bold">contact</h1>
 
             <div className="flex gap-2 group">
@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="h-56 flex justify-end relative">
+        <div className="h-24 flex justify-end relative">
           <div className=" inset-0 opacity-60 relative "></div>
           <img
             src={agroImg}
@@ -90,10 +90,10 @@ const Footer = () => {
 
         <div className="flex flex-row justify-between relative text-white">
           <div className="">
-            <p className="ml-6 mt-4 mb-10">AgroHive ©2024</p>
+            <p className="ml-6">AgroHive ©2024</p>
           </div>
           <div>
-            <p className="mr-6 mt-4 mb-10">
+            <p className="mr-6">
               Terms & Conditions / Privacy Policy
             </p>
           </div>
