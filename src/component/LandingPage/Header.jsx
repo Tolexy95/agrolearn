@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { BsEnvelope } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
+import {  } from "react-icons/fa";
 import WebsiteLogo from "../../assets/AgroHive_logo.png";
 import MobileLogo from "../../assets/AgroHive_logo_shape.png"
-import { FaRegClock } from "react-icons/fa";
+import { FaRegClock, FaLinkedinIn, FaFacebook } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { SideBarContext } from "../../context/SideBarProvider";
 import SideBar from "./SideBar";
-import { CiLinkedin } from "react-icons/ci";
+
 
 
 
@@ -27,7 +27,7 @@ const ContactInfo = () => (
   </div>
 
   <div className="flex gap-5  text-[#6e7673]">
-    <NavLink to="https://www.instagram.com/agro_hive/">
+    <NavLink to="https://www.instagram.com/agrohive_hq?igsh=YzljYTk1ODg3Zg==">
       <AiOutlineInstagram className=" w-5 h-5  hover:text-[#00cc3c]" />
     </NavLink>
     <NavLink to="https://www.youtube.com/channel/UCCH8--Svxf2TO7TLDWdP3Kg">
@@ -38,7 +38,7 @@ const ContactInfo = () => (
     </NavLink>
 
     <NavLink to="https://www.linkedin.com/company/agrohive/">
-      <CiLinkedin className="w-5 h-5  hover:text-[#00cc3c]" />
+    <FaLinkedinIn className="w-5 h-5  hover:text-[#00cc3c]"/>
     </NavLink>
   </div>
 
