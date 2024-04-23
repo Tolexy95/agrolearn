@@ -36,7 +36,7 @@ const BlogCard = () => {
             };
           }));
           setLoading(false); // Set loading to false after data is fetched
-        }, 10000); // Delay of 2 seconds
+        }, 2000); // Delay of 2 seconds
       } catch (error) {
         console.error('Error fetching stories:', error);
         setLoading(false); // Set loading to false in case of error
