@@ -77,12 +77,8 @@ const Footer = () => {
             </ul>
 
           </div>
-<<<<<<< HEAD
-          <div className="text-white">
-=======
 
           <div className="mt-8  text-white text-base">
->>>>>>> 44ed034d2e03860d87c8b6d5c1dd042a176d5a23
             <h1 className="mb-6  text-xl font-bold">contact</h1>
 
             <div className="flex gap-2 group mt-3">
@@ -105,12 +101,7 @@ const Footer = () => {
           </div>
         </div>
 
-<<<<<<< HEAD
-        <div className="h-24 flex justify-end relative">
-          <div className=" inset-0 opacity-60 relative "></div>
-=======
         
->>>>>>> 44ed034d2e03860d87c8b6d5c1dd042a176d5a23
           <img
             src={agroImg}
             alt="Footer Image"
@@ -118,23 +109,11 @@ const Footer = () => {
           />
        
 
-<<<<<<< HEAD
-        <div className="flex flex-row justify-between relative text-white">
-          <div className="">
-            <p className="ml-6">AgroHive ©2024</p>
-          </div>
-          <div>
-            <p className="mr-6">
-              Terms & Conditions / Privacy Policy
-            </p>
-          </div>
-=======
         <div className="flex flex-col md:flex-row gap-2 justify-between text-white mt-10 text-sm pb-5 font-sora">
           <p className="">
             <NavLink to="/privacy" className="hover:text-green-500 "> Terms & Conditions / Privacy Policy</NavLink>
           </p>
           <p className="">AgroHive ©{year}</p>
->>>>>>> 44ed034d2e03860d87c8b6d5c1dd042a176d5a23
         </div>
       </div>
     </>
