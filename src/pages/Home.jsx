@@ -6,6 +6,8 @@ import FounderSection from '../component/LandingPage/FounderSection';
 import ProjectSlide from '../component/LandingPage/ProjectSlide';
 import BlogCard from '../component/LandingPage/BlogCard';
 
+
+
 const Home = () => {
   return (
     <div className='mt-28'>

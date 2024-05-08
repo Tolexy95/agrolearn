@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import HeroSection from '../component/LandingPage/HeroSection';
+import HeroSection from '../component/CoursesPage/HeroSection';
 import { SideBarContext } from '../context/SideBarProvider';
+
 
 
 const CoursesPage = () => {
