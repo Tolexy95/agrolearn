@@ -94,27 +94,15 @@ const Footer = () => {
                 info@agrohive.co
               </p>
             </div>
-
-            <hr />
-
-            <div className="flex gap-2 mt-3 group hover:text-green-600 ">
-              <IoLocationSharp className="mt-1 group-hover:text-white text-green-500" />
-              <p className="mb-6 group-hover:text-green-500 ">
-                10 Hughes Avenue, Alagomeji, Yaba, Lagos state.
-              </p>
-            </div>
-
-            <hr/>
           </div>
         </div>
 
-        
-          {/* <img
+       
+        {/* <img
             src={agroImg}
             alt="Footer Image"
             className="object-cover right-0 bottom-0 absolute"
-          />
-        */}
+          /> */}
 
         <div className="flex flex-col md:flex-row gap-2 justify-between text-white mt-10 text-sm pb-5 font-sora">
           <p className="">

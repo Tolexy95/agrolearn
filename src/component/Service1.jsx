@@ -14,7 +14,7 @@ const Service1 = () => {
           iconA: PiPottedPlantThin,
           title: "Accelerate for Agribusinesses",
           description:
-            "Through Agccelerate for agribusinesses, we offer tailored virtual courses, in-person training and farm set-up solutions to agri-food business owners, managers or investors in Africa and the diaspora. Our goal is to assist you with the training and support you need in making the best agri-food business investment, management and growth decisions",
+            "Through Accelerate for agribusinesses, we offer tailored virtual courses, in-person training and farm set-up solutions to agri-food business owners, managers or investors in Africa and the diaspora. Our goal is to assist you with the training and support you need in making the best agri-food business investment, management and growth decisions",
         },
     
         {

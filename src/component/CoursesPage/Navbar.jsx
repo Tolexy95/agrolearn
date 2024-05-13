@@ -44,10 +44,7 @@ const NavBar = () => {
 
                 {/* <FaShoppingCart className="mr-4" /> */}
                 <div className='w-32'>
-                    <CustomButton
-                        labelText="Login"
-                        className="bg-[#2eaa50] text-white"
-                    />
+                    <button className=' btn-success bg-green-700'>Login</button>
                 </div>
 
             </div>
