@@ -19,8 +19,8 @@ const Footer = () => {
   return (
     <>
       <div className="bg-[#2b5e4c] -mt-7 lg:px-12 px-5 font-inter">
-        <div className="flex lg:flex-row flex-col justify-between mt-7 ">
-         
+        <div className="flex lg:flex-row flex-col justify-between mt-7">
+        
         <div className="mt-8  text-white">
           <NavLink to="/">
           <img src={agrohive} alt="logo" className="h-10" />
@@ -85,7 +85,7 @@ const Footer = () => {
 
           </div>
 
-          <div className="mt-8  text-white text-base">
+          <div className="mt-8 text-white text-base">
             <h1 className="mb-6  text-xl font-bold">contact</h1>
 
             <div className="flex gap-2 group mt-3">
@@ -95,14 +95,15 @@ const Footer = () => {
               </p>
             </div>
           </div>
+          <div></div>
         </div>
 
        
-        {/* <img
+        <img
             src={agroImg}
             alt="Footer Image"
             className="object-cover right-0 bottom-0 absolute"
-          /> */}
+          />
 
         <div className="flex flex-col md:flex-row gap-2 justify-between text-white mt-10 text-sm pb-5 font-sora">
           <p className="">
