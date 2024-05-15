@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import HeroSection from '../component/LandingPage/HeroSection';
+import HeroSection from '../component/CoursesPage/HeroSection';
 import { SideBarContext } from '../context/SideBarProvider';
 import { PiTelevisionSimple } from "react-icons/pi";
 import { IoIosSettings } from "react-icons/io";
@@ -8,6 +8,7 @@ import { PiNotePencil } from "react-icons/pi";
 import { ImMobile } from "react-icons/im";
 import FeatureCourses from '../component/FeatureCourses';
 import CourseReview from '../component/CourseReview';
+
 
 
 const CoursesPage = () => {

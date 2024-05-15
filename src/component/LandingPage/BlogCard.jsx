@@ -9,7 +9,7 @@ import Loader from '../Loader/loader';
 const BlogCard = () => {
   const navigate = useNavigate();
   const [stories, setStories] = useState([]);
-
+ 
   useEffect(() => {
     const fetchStories = async () => {
       try {
@@ -35,11 +35,11 @@ const BlogCard = () => {
               content: { paragraphs, listItems }
             };
           }));
-          setLoading(false); // Set loading to false after data is fetched
+          // setLoading(false); // Set loading to false after data is fetched
         }, 2000); // Delay of 2 seconds
       } catch (error) {
         console.error('Error fetching stories:', error);
-        setLoading(false); // Set loading to false in case of error
+        // setLoading(false); // Set loading to false in case of error
       }
     };
 

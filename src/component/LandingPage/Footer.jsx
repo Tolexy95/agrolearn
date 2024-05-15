@@ -22,7 +22,10 @@ const Footer = () => {
         <div className="flex lg:flex-row flex-col justify-between mt-7 ">
          
         <div className="mt-8  text-white">
-            <img src={agrohive} alt="logo" className="h-10" />
+          <NavLink to="/">
+          <img src={agrohive} alt="logo" className="h-10" />
+          </NavLink>
+           
             <p className="mb-6 mt-6 lg:w-[300px] leading-8">
               Access and hire well trained agricultural workforce that meets
               your agri-food business skills needs.
@@ -106,12 +109,12 @@ const Footer = () => {
         </div>
 
         
-          <img
+          {/* <img
             src={agroImg}
             alt="Footer Image"
             className="object-cover right-0 bottom-0 absolute"
           />
-       
+        */}
 
         <div className="flex flex-col md:flex-row gap-2 justify-between text-white mt-10 text-sm pb-5 font-sora">
           <p className="">
