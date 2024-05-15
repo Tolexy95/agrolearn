@@ -89,7 +89,7 @@ const ContactPage = () => {
         <p className="px-16 ml-2 mt-2 text-left lg:w-[380px] text-[#6e7673] text-lg">10 Hughes Avenue, Alagomeji, Yaba, Lagos state.</p>
         <hr className="w-[250px] mt-4 ml-16 hidden md:block"  />
         <div className="hidden:block px-16 text-left lg:mt-5 lg:lg:w-[350px] ">
-        <p className="text-[#6e7673] lg:text-lg">Klm 4 Old Orlu Road, Egbeada, Imo state.</p>
+        <p className="text-[#6e7673] lg:text-lg ">Klm 4 Old Orlu Road, Egbeada, Imo state.</p>
       </div>
       </div>
       <hr className=" lg:w-[290px] mt-4  lg:hidden" />
