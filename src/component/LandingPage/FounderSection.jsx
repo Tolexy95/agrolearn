@@ -22,7 +22,7 @@ const FounderSection = () => {
   };
 
   return (
-    <div className={`lg:-mt-32 md:-mt-24 -mt-28 bg-[#f6f5f2] shadow-lg  font-inter '}`} style={{ boxShadow: '0px 10px 60px 0px rgba(0, 0, 0, 0.3)' }}>
+    <div className={`lg:-mt-12 mt-12 bg-[#f6f5f2] shadow-lg  font-inter '}`} style={{ boxShadow: '0px 10px 60px 0px rgba(0, 0, 0, 0.3)' }}>
       <div className="flex flex-col lg:flex-row justify-between gap-20 px-5 md:px-12 lg:py-16">
 
         <div className="flex-1">
@@ -40,7 +40,7 @@ const FounderSection = () => {
             />
 
             <div className="absolute left-0 top-0 bottom-0 right-0 flex justify-center items-center hover:bg-[#17630031] opacity-0 hover:opacity-100 hover:bg-opacity-95">
-              <div className="flex gap-4 mt-80">
+              <div className="flex gap-4 md:mt-80 mt-40">
                 <div className="w-11 h-11 rounded-full bg-white hover:bg-[#00cc3c] hover:text-white flex items-center justify-center text-[#00cc3c]">
                   <NavLink to="https://www.linkedin.com/in/chiamaka-ndukwu/">
                     <FaLinkedinIn className="w-4 h-4" />

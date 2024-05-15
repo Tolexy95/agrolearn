@@ -9,7 +9,7 @@ import Loader from '../Loader/loader';
 const BlogCard = () => {
   const navigate = useNavigate();
   const [stories, setStories] = useState([]);
-
+ 
   useEffect(() => {
     const fetchStories = async () => {
       try {
@@ -35,11 +35,11 @@ const BlogCard = () => {
               content: { paragraphs, listItems }
             };
           }));
-          setLoading(false); // Set loading to false after data is fetched
-        }, 10000); // Delay of 2 seconds
+          // setLoading(false); // Set loading to false after data is fetched
+        }, 2000); // Delay of 2 seconds
       } catch (error) {
         console.error('Error fetching stories:', error);
-        setLoading(false); // Set loading to false in case of error
+        // setLoading(false); // Set loading to false in case of error
       }
     };
 
@@ -52,7 +52,7 @@ const BlogCard = () => {
   };
 
   return (
-    <div className='px-5 md:px-12 bg-[#f6f5f270] py-8 mt-16 mb-40 font-inter'>
+    <div className='px-5 md:px-12 bg-[#f6f5f270] py-8 mt-16 font-inter'>
       <h1 className='text-[#255946] font-sora text-3xl text-center mb-8 font-semibold capitalize'>blog</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10' >
         {stories.length > 0 ? (

@@ -10,7 +10,7 @@ import AboutComponent from '../component/LandingPage/AboutComponent';
 
 const AboutPage = () => {
   return (
-    <div className="mt-28">
+    <div className="dark:mt-20 dark:lg:mt-[108px] mt-28 px-5 md:px-12">
     <h1 className="text-[38px] font-bold  text-[#255946] text-center">
      ABOUT US
    </h1>
@@ -42,7 +42,7 @@ const AboutPage = () => {
 
        <div className='flex items-center gap-1 pb-4'>
          <IoMdCheckmark className='text-white bg-[#176300] text-xl rounded-full p-1'/>
-         <p className='text-[#176300]'>Workforce Management and Performance Tracking</p>
+         <p className='text-[#176300]'>Manage Your Agricultural Workforce And Track Performance</p>
        </div>
        <p className="leading-10 text-[18px] text-[#6E7673] md:text-[17px] pb-5">
        Cut down workforce management costs by 50%. We help agri-food businesses track their staff performance and increase workforce productivity.

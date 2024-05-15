@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
-import HeroSection from '../component/LandingPage/HeroSection';
+import HeroSection from '../component/CoursesPage/HeroSection';
 import { SideBarContext } from '../context/SideBarProvider';
+
 
 
 const CoursesPage = () => {
   const { isNavOpen } = useContext(SideBarContext);
   return (
-    <div className='mt-28' style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
+    <div className='dark:mt-20 dark:lg:mt-[108px] mt-28' style={{ zIndex: isNavOpen ? -1 : 'auto' }}>
       <HeroSection />
       <div className={`py-12 font-inter ${isNavOpen ? '' : 'bg-green-50'}`}>
         <div className="container mx-auto px-4">
