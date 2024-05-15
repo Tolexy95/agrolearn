@@ -9,7 +9,7 @@ import { ButtonSize, ButtonState } from '../Button/ButtonStyles';
 const AboutComponent = ({ title, subtitle, description1, description2, description3, description4,  }) => {
     return (
         <>
-            <div className={`font-inter px-5 md:px-12 mt-12 flex flex-col lg:flex-row gap-5 mb-36 lg:gap-11 lg:p-10 relative`}>
+            <div className={`font-inter px-5 md:px-12 mt-12 flex flex-col lg:flex-row gap-5 lg:gap-11 lg:p-10 relative`}>
 
                 <img src="https://www.agrohive.co/assets/images/icons/about-bg-icon-1-1.png " className="absolute top-[95%] md:top-[90%] lg:top-[70%]  left-0 -z-10" alt="" />
 
