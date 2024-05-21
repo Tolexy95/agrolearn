@@ -78,13 +78,13 @@ const Header = () => {
             </NavLink>
           </li>
           
-          <li>
+          {/* <li>
             <NavLink
               to="/service"
               className="hover-text">
               Services
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/partner"
@@ -100,13 +100,13 @@ const Header = () => {
             </NavLink>
           </li>
           
-          <li>
+          {/* <li>
             <NavLink
               to="/contact"
               className="hover-text" >
               Contact
             </NavLink>
-          </li>
+          </li> */}
         </ul>
 
   <ContactInfo/>
