@@ -75,15 +75,18 @@ const ContactPage = () => {
               rows="8"
             ></textarea>
           </div>
+          <div className="mt-3 mb-48">
           <Button
             className={`${ButtonSize ? "w-50 md:w-56 py-5 mr-28 lg:mr-96 " : "w-1/2"}`}
             value="Send Message"
             size={ButtonSize.md}
             variant={ButtonState.PRIMARY}
           />
+          </div>
+          
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center space-y-3 lg:space-y-0 lg:space-x-3 mt-20 text-center">
+      {/* <div className="flex flex-col lg:flex-row items-center justify-center space-y-3 lg:space-y-0 lg:space-x-3 mt-20 text-center">
       <div>
         <h1 className="text-left text-green-900 text-lg font-bold px-16 ml-2">Visit Company</h1>
         <p className="px-16 ml-2 mt-2 text-left lg:w-[380px] text-[#6e7673] text-lg">10 Hughes Avenue, Alagomeji, Yaba, Lagos state.</p>
@@ -117,7 +120,7 @@ const ContactPage = () => {
             Ivorycoast@agrohive.co diaspora@agrohive.co
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
