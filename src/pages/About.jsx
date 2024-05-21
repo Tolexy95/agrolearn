@@ -68,11 +68,11 @@ const AboutPage = () => {
      </div>
    </div>
 
-   <div className="flex flex-col lg:flex-row mb-32 lg:mx-20 mx-1 gap-10 pb-10 ">
-     <div className="flex-1 px-10 text-center group h-[500px] py-6 shadow-lg rounded-md hover:bg-green-600">
-     <div className='flex flex-col text-center lg:flex-row-reverse lg:gap-72 hover:text-white'>
+   <div className="flex flex-col lg:flex-row mb-32 lg:mx-20 mx-1 gap-10">
+     <div className="flex-1 px-10 text-center group py-6 shadow-lg rounded-md hover:bg-green-600">
+     <div className='flex flex-col lg:flex-row-reverse items-center lg:gap-64 hover:text-white'>
      <FaTractor className='w-[60px] h-[60px] group-hover:text-white mx-auto pt-4 pb-4 text-[#00CC3C]'/>
-       <h1 className="lg:text-left text-[#6E7673] font-sora group-hover:text-white text-center leading-[40px] font-semibold pb-2 hover:text-white">
+       <h1 className="lg:text-left text-[#6E7673] font-sora group-hover:text-white text-center leading-[40px] font-semibold pb-4">
        OUR MISSION
        </h1>
        </div>
@@ -80,10 +80,10 @@ const AboutPage = () => {
 development & seamless access to quality agricultural talents, which will enhance agribusiness productivity across Africa.</p>
      </div>
 
-     <div className="flex-1 h-[500px] py-6 px-10 shadow-lg  mx-auto rounded-md hover:bg-green-600 group hover:text-white">
-     <div className='flex flex-col lg:flex-row-reverse lg:gap-72'>
+     <div className="flex-1 py-6 px-10 shadow-lg rounded-md hover:bg-green-600 group hover:text-white">
+     <div className='flex flex-col lg:flex-row-reverse items-center lg:gap-64'>
      <PiTreePalm className='w-[60px] h-[60px] group-hover:text-white mx-auto pt-4 pb-4 text-[#00CC3C]'/>
-       <h1 className="lg:text-left text-center font-sora text-[#6E7673] leading-[40px] font-semibold pb-4 group-hover:text-white">
+       <h1 className="lg:text-left text-[#6E7673] font-sora group-hover:text-white text-center leading-[40px] font-semibold pb-4 ">
        OUR VISION
        </h1>
        </div>

@@ -31,7 +31,7 @@ const CourseReview = () => {
   ];
 
   return (
-    <div className="md:mx-24 mt-20">
+    <div className="md:mx-24 mt-20 mb-10">
       <h1 className="text-[#2E7d32] text-4xl font-sora pb-12 font-bold tracking-wider text-center">
         STUDENT REVIEWS
       </h1>
