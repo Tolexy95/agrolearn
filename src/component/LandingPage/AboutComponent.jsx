@@ -1,7 +1,5 @@
 import React from 'react';
-// import { FaTractor } from "react-icons/fa6";
-import icon1 from "../../assets/farmerIcon.png";
-import { PiTreePalm } from "react-icons/pi";
+import { GiPitchfork } from 'react-icons/gi';
 import Button from '../Button/CustomButton';
 import picture from '../../assets/two girls.jpg'
 import picture2 from '../../assets/paw paw man.jpg'
@@ -58,13 +56,12 @@ const AboutComponent = ({ title, subtitle, description1, description2, descripti
                     <div className='lg:flex lg:flex-row items-center lg:mt-8 mt-4'>
 
                         <div className='mt-10 lg:mt-0 flex items-center px-4 gap-4   '>
-                            {/* <FaTractor className='text-2xl text-[#176300]' /> */}
-                            <img className='w-8' src={icon1} alt="" />
+                            <GiPitchfork className='' />
                             <p className='text-[#176300] font-semibold text-2xl'>Agro Experts</p>
                         </div>
 
                         <div className='mt-6 lg:mt-0 lg:mb-0 mb-10 flex items-center px-4  gap-4'>
-                            <PiTreePalm className='text-2xl text-[#176300]' />
+                            <GiPitchfork className='' />
                             <p className='text-[#176300] text-2xl font-semibold'>Professional farmers</p>
                         </div>
 
