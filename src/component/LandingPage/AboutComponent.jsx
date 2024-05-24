@@ -6,7 +6,7 @@ import picture2 from '../../assets/paw paw man.jpg'
 import { ButtonSize, ButtonState } from '../Button/ButtonStyles';
 
 
-const AboutComponent = ({ title, subtitle, description1, description2, description3, description4,  }) => {
+const AboutComponent = ({ title, subtitle, description1, description2, description3, description4, titleClass, subtitleClass }) => {
     return (
         <>
             <div className={`font-inter px-5 md:px-12 mt-12 flex flex-col lg:flex-row gap-5 lg:gap-11 lg:p-10 relative`}>
@@ -28,13 +28,15 @@ const AboutComponent = ({ title, subtitle, description1, description2, descripti
                 </div>
 
                 <div className='md:px-5  lg:py-24 lg:px-16 lg:w-full'>
-                    <h1 className='mt-9 font-semibold text-[#9ea5a2] md:mt-52 lg:mt-0 text-sm mb-3 tracking-[0.2em]' style={{ lineHeight: '1.3' }}>{title}</h1>
+                    <h1 className={`font-semibold mt-9 text-[#9ea5a2] md:mt-52 lg:mt-0 text-sm mb-3 tracking-[0.2em] ${titleClass}`}
+                        style={{ lineHeight: '1.3' }}>{title}</h1>
 
-                    <h2 className="text-2xl md:text-[35px] lg:text-[2.8rem] text-[#255946] font-semibold leading-loose" style={{ lineHeight: '1.3' }}>
+                    <h2 className={`text-2xl md:text-[35px] lg:text-[2.8rem] text-[#255946] font-semibold leading-loose ${subtitleClass}`}
+                        style={{ lineHeight: '1.3' }}>
                         {subtitle}
                     </h2>
 
-                    <p className='mt-6 text-[18px]  text-[#00cc3c] font-sora italic'>{description1}</p>
+                    <p className='mt-6 text-[18px]  text-[#00cc3c] font-sora italic text-justify'>{description1}</p>
                     <div className='text-justify'>
                         <p className='mt-6 text-base text-[#6e7673] tracking-widest' style={{ lineHeight: '1.9' }}>
                             {description2}
